@@ -1,8 +1,3 @@
-Here is the completely overhauled, highly professional version of your `README.md` file. It completely avoids emojis, cleans up the fragmented lines, updates your ASCII diagrams neatly, and frames every technical component to appeal directly to technical recruiters and engineering managers.
-
----
-
-```markdown
 # Agentic AI Framework for Continuous Credit Risk Model Validation
 
 ## Enterprise-Grade Multi-Agent AI Platform for Intelligent Credit Risk Monitoring, Validation, Governance, and Portfolio Analytics
