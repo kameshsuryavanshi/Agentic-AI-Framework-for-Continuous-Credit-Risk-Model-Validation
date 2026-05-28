@@ -1,0 +1,1656 @@
+2026-05-23 14:41:49,291 | INFO | main | Loading dataset...
+2026-05-23 14:41:49,291 | INFO | main | Starting preprocessing...
+2026-05-23 14:41:49,291 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-23 14:41:49,291 | INFO | preprocessing | Loading raw dataset
+2026-05-23 14:42:24,958 | INFO | risk_model | Loading model
+2026-05-23 23:46:39,207 | INFO | main | Loading dataset...
+2026-05-23 23:46:39,208 | INFO | main | Starting preprocessing...
+2026-05-23 23:46:39,208 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-23 23:46:39,208 | INFO | preprocessing | Loading raw dataset
+2026-05-23 23:48:48,298 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-23 23:48:54,280 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-23 23:48:54,888 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-23 23:48:55,024 | INFO | preprocessing | Creating default target
+2026-05-23 23:48:55,290 | INFO | preprocessing | Processing date columns
+2026-05-23 23:48:55,518 | INFO | preprocessing | Processing employment length
+2026-05-23 23:48:55,820 | INFO | preprocessing | Processing percentage columns
+2026-05-23 23:48:57,293 | INFO | preprocessing | Creating risk features
+2026-05-23 23:48:57,318 | INFO | preprocessing | Dropping high null columns
+2026-05-23 23:48:58,483 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-23 23:48:58,617 | INFO | preprocessing | Handling missing values
+2026-05-23 23:49:02,486 | INFO | preprocessing | Encoding categorical columns
+2026-05-23 23:49:10,641 | INFO | preprocessing | Selecting final features
+2026-05-23 23:49:10,735 | INFO | preprocessing | Optimizing memory
+2026-05-23 23:49:11,007 | INFO | preprocessing | Preprocessing completed
+2026-05-23 23:49:11,007 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-23 23:49:11,007 | INFO | main | Training PD model...
+2026-05-23 23:49:11,007 | INFO | risk_model | Preparing train/test datasets
+2026-05-23 23:49:11,475 | INFO | risk_model | Training XGBoost model
+2026-05-23 23:49:19,436 | INFO | risk_model | Training completed
+2026-05-23 23:49:19,436 | INFO | risk_model | Evaluating model
+2026-05-23 23:49:20,282 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-23 23:49:20,283 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-23 23:49:21,513 | INFO | main | Running ECL engine...
+2026-05-23 23:49:21,513 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-23 23:49:49,431 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-23 23:49:49,431 | INFO | main | Running validation engine...
+2026-05-23 23:49:49,431 | INFO | validation | Starting validation engine
+2026-05-23 23:49:49,431 | INFO | validation | Generating portfolio summary
+2026-05-23 23:49:49,439 | INFO | validation | Running drift analysis
+2026-05-23 23:49:53,192 | INFO | validation | Running bias analysis
+2026-05-23 23:49:53,192 | INFO | validation | Generating risk distribution
+2026-05-23 23:49:53,195 | INFO | validation | Analyzing top risk segments
+2026-05-23 23:49:53,195 | INFO | validation | Validation completed
+2026-05-23 23:49:53,195 | INFO | main | Initializing RAG pipeline...
+2026-05-23 23:49:53,222 | INFO | rag_pipeline | Creating new vector database
+2026-05-23 23:49:53,222 | INFO | rag_pipeline | Building vector database
+2026-05-23 23:49:53,222 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-23 23:49:54,279 | INFO | rag_pipeline | Loaded 231 document pages
+2026-05-23 23:49:54,279 | INFO | rag_pipeline | Chunking documents
+2026-05-23 23:49:54,285 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-24 00:13:05,874 | INFO | risk_model | Loading model
+2026-05-24 00:13:24,665 | INFO | main | Loading dataset...
+2026-05-24 00:13:24,665 | INFO | main | Starting preprocessing...
+2026-05-24 00:13:24,665 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 00:13:24,665 | INFO | preprocessing | Loading raw dataset
+2026-05-24 00:15:01,258 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 00:15:07,722 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 00:15:08,428 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 00:15:08,596 | INFO | preprocessing | Creating default target
+2026-05-24 00:15:08,884 | INFO | preprocessing | Processing date columns
+2026-05-24 00:15:09,108 | INFO | preprocessing | Processing employment length
+2026-05-24 00:15:09,418 | INFO | preprocessing | Processing percentage columns
+2026-05-24 00:15:10,989 | INFO | preprocessing | Creating risk features
+2026-05-24 00:15:11,015 | INFO | preprocessing | Dropping high null columns
+2026-05-24 00:15:12,238 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 00:15:12,376 | INFO | preprocessing | Handling missing values
+2026-05-24 00:15:16,345 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 00:15:24,771 | INFO | preprocessing | Selecting final features
+2026-05-24 00:15:24,857 | INFO | preprocessing | Optimizing memory
+2026-05-24 00:15:25,127 | INFO | preprocessing | Preprocessing completed
+2026-05-24 00:15:25,127 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 00:15:25,127 | INFO | main | Training PD model...
+2026-05-24 00:15:25,127 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 00:15:25,591 | INFO | risk_model | Training XGBoost model
+2026-05-24 00:15:33,256 | INFO | risk_model | Training completed
+2026-05-24 00:15:33,256 | INFO | risk_model | Evaluating model
+2026-05-24 00:15:34,026 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:15:34,026 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:15:35,220 | INFO | main | Running ECL engine...
+2026-05-24 00:15:35,220 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 00:16:04,124 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 00:16:04,124 | INFO | main | Running validation engine...
+2026-05-24 00:16:04,124 | INFO | validation | Starting validation engine
+2026-05-24 00:16:04,124 | INFO | validation | Generating portfolio summary
+2026-05-24 00:16:04,133 | INFO | validation | Running drift analysis
+2026-05-24 00:16:07,897 | INFO | validation | Running bias analysis
+2026-05-24 00:16:07,897 | INFO | validation | Generating risk distribution
+2026-05-24 00:16:07,900 | INFO | validation | Analyzing top risk segments
+2026-05-24 00:16:07,900 | INFO | validation | Validation completed
+2026-05-24 00:16:07,900 | INFO | main | Initializing RAG pipeline...
+2026-05-24 00:16:07,928 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 00:16:07,928 | INFO | rag_pipeline | Building vector database
+2026-05-24 00:16:07,928 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 00:16:08,993 | INFO | rag_pipeline | Loaded 231 document pages
+2026-05-24 00:16:08,993 | INFO | rag_pipeline | Chunking documents
+2026-05-24 00:16:08,999 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-24 00:21:57,085 | INFO | risk_model | Loading model
+2026-05-24 00:25:08,231 | INFO | risk_model | Loading model
+2026-05-24 00:25:30,763 | INFO | risk_model | Loading model
+2026-05-24 00:25:58,011 | INFO | main | Loading dataset...
+2026-05-24 00:25:58,011 | INFO | main | Starting preprocessing...
+2026-05-24 00:25:58,011 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 00:25:58,011 | INFO | preprocessing | Loading raw dataset
+2026-05-24 00:28:04,217 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 00:28:10,146 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 00:28:10,802 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 00:28:10,943 | INFO | preprocessing | Creating default target
+2026-05-24 00:28:11,206 | INFO | preprocessing | Processing date columns
+2026-05-24 00:28:11,422 | INFO | preprocessing | Processing employment length
+2026-05-24 00:28:11,724 | INFO | preprocessing | Processing percentage columns
+2026-05-24 00:28:13,235 | INFO | preprocessing | Creating risk features
+2026-05-24 00:28:13,261 | INFO | preprocessing | Dropping high null columns
+2026-05-24 00:28:14,430 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 00:28:14,561 | INFO | preprocessing | Handling missing values
+2026-05-24 00:28:18,590 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 00:28:27,040 | INFO | preprocessing | Selecting final features
+2026-05-24 00:28:27,149 | INFO | preprocessing | Optimizing memory
+2026-05-24 00:28:27,414 | INFO | preprocessing | Preprocessing completed
+2026-05-24 00:28:27,414 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 00:28:27,414 | INFO | main | Training PD model...
+2026-05-24 00:28:27,414 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 00:28:27,868 | INFO | risk_model | Training XGBoost model
+2026-05-24 00:28:35,728 | INFO | risk_model | Training completed
+2026-05-24 00:28:35,728 | INFO | risk_model | Evaluating model
+2026-05-24 00:28:36,466 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:28:36,467 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:28:37,682 | INFO | main | Running ECL engine...
+2026-05-24 00:28:37,682 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 00:29:06,396 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 00:29:06,396 | INFO | main | Running validation engine...
+2026-05-24 00:29:06,396 | INFO | validation | Starting validation engine
+2026-05-24 00:29:06,396 | INFO | validation | Generating portfolio summary
+2026-05-24 00:29:06,404 | INFO | validation | Running drift analysis
+2026-05-24 00:29:10,145 | INFO | validation | Running bias analysis
+2026-05-24 00:29:10,145 | INFO | validation | Generating risk distribution
+2026-05-24 00:29:10,149 | INFO | validation | Analyzing top risk segments
+2026-05-24 00:29:10,149 | INFO | validation | Validation completed
+2026-05-24 00:29:10,149 | INFO | main | Initializing RAG pipeline...
+2026-05-24 00:29:10,179 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 00:29:10,179 | INFO | rag_pipeline | Building vector database
+2026-05-24 00:29:10,179 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 00:29:11,220 | INFO | rag_pipeline | Loaded 231 document pages
+2026-05-24 00:29:11,220 | INFO | rag_pipeline | Chunking documents
+2026-05-24 00:29:11,226 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-24 00:37:55,021 | INFO | risk_model | Loading model
+2026-05-24 00:38:41,181 | INFO | main | Loading dataset...
+2026-05-24 00:38:41,181 | INFO | main | Starting preprocessing...
+2026-05-24 00:38:41,182 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 00:38:41,182 | INFO | preprocessing | Loading raw dataset
+2026-05-24 00:40:34,189 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 00:40:40,903 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 00:40:41,636 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 00:40:41,792 | INFO | preprocessing | Creating default target
+2026-05-24 00:40:42,053 | INFO | preprocessing | Processing date columns
+2026-05-24 00:40:42,266 | INFO | preprocessing | Processing employment length
+2026-05-24 00:40:42,551 | INFO | preprocessing | Processing percentage columns
+2026-05-24 00:40:43,961 | INFO | preprocessing | Creating risk features
+2026-05-24 00:40:43,987 | INFO | preprocessing | Dropping high null columns
+2026-05-24 00:40:45,128 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 00:40:45,261 | INFO | preprocessing | Handling missing values
+2026-05-24 00:40:49,285 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 00:40:57,581 | INFO | preprocessing | Selecting final features
+2026-05-24 00:40:57,669 | INFO | preprocessing | Optimizing memory
+2026-05-24 00:40:57,941 | INFO | preprocessing | Preprocessing completed
+2026-05-24 00:40:57,942 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 00:40:57,942 | INFO | main | Training PD model...
+2026-05-24 00:40:57,942 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 00:40:58,387 | INFO | risk_model | Training XGBoost model
+2026-05-24 00:41:05,987 | INFO | risk_model | Training completed
+2026-05-24 00:41:05,987 | INFO | risk_model | Evaluating model
+2026-05-24 00:41:06,686 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:41:06,686 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:41:07,748 | INFO | main | Running ECL engine...
+2026-05-24 00:41:07,748 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 00:41:33,380 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 00:41:33,380 | INFO | main | Running validation engine...
+2026-05-24 00:41:33,380 | INFO | validation | Starting validation engine
+2026-05-24 00:41:33,380 | INFO | validation | Generating portfolio summary
+2026-05-24 00:41:33,390 | INFO | validation | Running drift analysis
+2026-05-24 00:41:37,068 | INFO | validation | Running bias analysis
+2026-05-24 00:41:37,068 | INFO | validation | Generating risk distribution
+2026-05-24 00:41:37,071 | INFO | validation | Analyzing top risk segments
+2026-05-24 00:41:37,071 | INFO | validation | Validation completed
+2026-05-24 00:41:37,071 | INFO | main | Initializing RAG pipeline...
+2026-05-24 00:41:37,099 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 00:41:37,099 | INFO | rag_pipeline | Building vector database
+2026-05-24 00:41:37,100 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 00:41:37,100 | INFO | rag_pipeline | Loading PDF: ifrs9Z_financial_instruments.pdf
+2026-05-24 00:41:37,638 | INFO | rag_pipeline | Loading PDF: rbi_digital_lending_directions_2025.pdf
+2026-05-24 00:41:37,772 | INFO | rag_pipeline | Loading PDF: eu_ai_act_annex_iii.pdf
+2026-05-24 00:41:37,804 | INFO | rag_pipeline | Loading PDF: ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 00:41:38,111 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 00:41:38,111 | INFO | rag_pipeline | Chunking documents
+2026-05-24 00:41:38,116 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-24 00:43:48,577 | INFO | main | Loading dataset...
+2026-05-24 00:43:48,577 | INFO | main | Starting preprocessing...
+2026-05-24 00:43:48,577 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 00:43:48,577 | INFO | preprocessing | Loading raw dataset
+2026-05-24 00:45:02,868 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 00:45:09,574 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 00:45:10,612 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 00:45:10,790 | INFO | preprocessing | Creating default target
+2026-05-24 00:45:11,081 | INFO | preprocessing | Processing date columns
+2026-05-24 00:45:11,305 | INFO | preprocessing | Processing employment length
+2026-05-24 00:45:11,590 | INFO | preprocessing | Processing percentage columns
+2026-05-24 00:45:12,981 | INFO | preprocessing | Creating risk features
+2026-05-24 00:45:13,006 | INFO | preprocessing | Dropping high null columns
+2026-05-24 00:45:14,223 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 00:45:14,358 | INFO | preprocessing | Handling missing values
+2026-05-24 00:45:18,478 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 00:45:26,511 | INFO | preprocessing | Selecting final features
+2026-05-24 00:45:26,593 | INFO | preprocessing | Optimizing memory
+2026-05-24 00:45:26,878 | INFO | preprocessing | Preprocessing completed
+2026-05-24 00:45:26,878 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 00:45:26,878 | INFO | main | Training PD model...
+2026-05-24 00:45:26,878 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 00:45:27,343 | INFO | risk_model | Training XGBoost model
+2026-05-24 00:45:34,458 | INFO | risk_model | Training completed
+2026-05-24 00:45:34,458 | INFO | risk_model | Evaluating model
+2026-05-24 00:45:35,113 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:45:35,113 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:45:36,166 | INFO | main | Running ECL engine...
+2026-05-24 00:45:36,166 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 00:46:01,904 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 00:46:01,904 | INFO | main | Running validation engine...
+2026-05-24 00:46:01,904 | INFO | validation | Starting validation engine
+2026-05-24 00:46:01,904 | INFO | validation | Generating portfolio summary
+2026-05-24 00:46:01,912 | INFO | validation | Running drift analysis
+2026-05-24 00:46:05,639 | INFO | validation | Running bias analysis
+2026-05-24 00:46:05,639 | INFO | validation | Generating risk distribution
+2026-05-24 00:46:05,642 | INFO | validation | Analyzing top risk segments
+2026-05-24 00:46:05,642 | INFO | validation | Validation completed
+2026-05-24 00:46:05,642 | INFO | main | Initializing RAG pipeline...
+2026-05-24 00:46:05,651 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 00:46:05,652 | INFO | rag_pipeline | Building vector database
+2026-05-24 00:46:05,652 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 00:46:05,652 | INFO | rag_pipeline | Loading PDF: ifrs9Z_financial_instruments.pdf
+2026-05-24 00:46:06,208 | INFO | rag_pipeline | Loading PDF: rbi_digital_lending_directions_2025.pdf
+2026-05-24 00:46:06,387 | INFO | rag_pipeline | Loading PDF: eu_ai_act_annex_iii.pdf
+2026-05-24 00:46:06,420 | INFO | rag_pipeline | Loading PDF: ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 00:46:06,750 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 00:46:06,750 | INFO | rag_pipeline | Chunking documents
+2026-05-24 00:46:06,755 | INFO | rag_pipeline | Generated 767 chunks
+2026-05-24 00:46:06,755 | INFO | rag_pipeline | Creating FAISS embeddings
+2026-05-24 00:46:06,755 | INFO | rag_pipeline | Embedding batch 0 -> 20
+2026-05-24 00:52:37,908 | INFO | main | Loading dataset...
+2026-05-24 00:52:37,908 | INFO | main | Starting preprocessing...
+2026-05-24 00:52:37,908 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 00:52:37,908 | INFO | preprocessing | Loading raw dataset
+2026-05-24 00:53:39,187 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 00:53:44,494 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 00:53:45,035 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 00:53:45,166 | INFO | preprocessing | Creating default target
+2026-05-24 00:53:45,429 | INFO | preprocessing | Processing date columns
+2026-05-24 00:53:45,646 | INFO | preprocessing | Processing employment length
+2026-05-24 00:53:45,927 | INFO | preprocessing | Processing percentage columns
+2026-05-24 00:53:47,313 | INFO | preprocessing | Creating risk features
+2026-05-24 00:53:47,335 | INFO | preprocessing | Dropping high null columns
+2026-05-24 00:53:48,435 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 00:53:48,560 | INFO | preprocessing | Handling missing values
+2026-05-24 00:53:52,315 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 00:54:00,246 | INFO | preprocessing | Selecting final features
+2026-05-24 00:54:00,329 | INFO | preprocessing | Optimizing memory
+2026-05-24 00:54:00,581 | INFO | preprocessing | Preprocessing completed
+2026-05-24 00:54:00,581 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 00:54:00,582 | INFO | main | Training PD model...
+2026-05-24 00:54:00,582 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 00:54:01,021 | INFO | risk_model | Training XGBoost model
+2026-05-24 00:54:07,722 | INFO | risk_model | Training completed
+2026-05-24 00:54:07,722 | INFO | risk_model | Evaluating model
+2026-05-24 00:54:08,365 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:54:08,365 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 00:54:09,361 | INFO | main | Running ECL engine...
+2026-05-24 00:54:09,361 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 00:54:34,601 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 00:54:34,601 | INFO | main | Running validation engine...
+2026-05-24 00:54:34,601 | INFO | validation | Starting validation engine
+2026-05-24 00:54:34,601 | INFO | validation | Generating portfolio summary
+2026-05-24 00:54:34,609 | INFO | validation | Running drift analysis
+2026-05-24 00:54:38,167 | INFO | validation | Running bias analysis
+2026-05-24 00:54:38,167 | INFO | validation | Generating risk distribution
+2026-05-24 00:54:38,170 | INFO | validation | Analyzing top risk segments
+2026-05-24 00:54:38,170 | INFO | validation | Validation completed
+2026-05-24 00:54:38,170 | INFO | main | Initializing RAG pipeline...
+2026-05-24 00:58:52,707 | INFO | main | Loading dataset...
+2026-05-24 00:58:52,707 | INFO | main | Starting preprocessing...
+2026-05-24 00:58:52,707 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 00:58:52,707 | INFO | preprocessing | Loading raw dataset
+2026-05-24 01:01:33,965 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 01:01:40,282 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 01:01:40,968 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 01:01:41,147 | INFO | preprocessing | Creating default target
+2026-05-24 01:01:41,412 | INFO | preprocessing | Processing date columns
+2026-05-24 01:01:41,628 | INFO | preprocessing | Processing employment length
+2026-05-24 01:01:41,911 | INFO | preprocessing | Processing percentage columns
+2026-05-24 01:01:43,292 | INFO | preprocessing | Creating risk features
+2026-05-24 01:01:43,339 | INFO | preprocessing | Dropping high null columns
+2026-05-24 01:01:44,444 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 01:01:44,576 | INFO | preprocessing | Handling missing values
+2026-05-24 01:01:48,558 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 01:01:56,583 | INFO | preprocessing | Selecting final features
+2026-05-24 01:01:56,671 | INFO | preprocessing | Optimizing memory
+2026-05-24 01:01:56,944 | INFO | preprocessing | Preprocessing completed
+2026-05-24 01:01:56,944 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 01:01:56,944 | INFO | main | Training PD model...
+2026-05-24 01:01:56,944 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 01:01:57,388 | INFO | risk_model | Training XGBoost model
+2026-05-24 01:02:04,136 | INFO | risk_model | Training completed
+2026-05-24 01:02:04,136 | INFO | risk_model | Evaluating model
+2026-05-24 01:02:04,788 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 01:02:04,788 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 01:02:05,810 | INFO | main | Running ECL engine...
+2026-05-24 01:02:05,810 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 01:02:30,945 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 01:02:30,945 | INFO | main | Running validation engine...
+2026-05-24 01:02:30,945 | INFO | validation | Starting validation engine
+2026-05-24 01:02:30,945 | INFO | validation | Generating portfolio summary
+2026-05-24 01:02:30,952 | INFO | validation | Running drift analysis
+2026-05-24 01:02:34,532 | INFO | validation | Running bias analysis
+2026-05-24 01:02:34,532 | INFO | validation | Generating risk distribution
+2026-05-24 01:02:34,534 | INFO | validation | Analyzing top risk segments
+2026-05-24 01:02:34,534 | INFO | validation | Validation completed
+2026-05-24 01:02:34,534 | INFO | main | Initializing RAG pipeline...
+2026-05-24 01:03:04,166 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 01:03:04,167 | INFO | rag_pipeline | Building vector database
+2026-05-24 01:03:04,167 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 01:03:04,167 | INFO | rag_pipeline | Loading PDF: ifrs9Z_financial_instruments.pdf
+2026-05-24 01:03:04,700 | INFO | rag_pipeline | Loading PDF: rbi_digital_lending_directions_2025.pdf
+2026-05-24 01:03:04,833 | INFO | rag_pipeline | Loading PDF: eu_ai_act_annex_iii.pdf
+2026-05-24 01:03:04,864 | INFO | rag_pipeline | Loading PDF: ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 01:03:05,179 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 01:03:05,179 | INFO | rag_pipeline | Chunking documents
+2026-05-24 01:03:05,185 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-24 01:03:05,185 | INFO | rag_pipeline | Valid chunks: 656
+2026-05-24 01:03:05,185 | INFO | rag_pipeline | Creating FAISS embeddings
+2026-05-24 01:03:05,185 | INFO | rag_pipeline | Embedding batch 0 -> 64
+2026-05-24 19:48:50,032 | INFO | main | Loading dataset...
+2026-05-24 19:48:50,033 | INFO | main | Starting preprocessing...
+2026-05-24 19:48:50,033 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 19:48:50,033 | INFO | preprocessing | Loading raw dataset
+2026-05-24 19:50:48,786 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 19:50:54,298 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 19:50:54,858 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 19:50:54,995 | INFO | preprocessing | Creating default target
+2026-05-24 19:50:55,273 | INFO | preprocessing | Processing date columns
+2026-05-24 19:50:55,490 | INFO | preprocessing | Processing employment length
+2026-05-24 19:50:55,774 | INFO | preprocessing | Processing percentage columns
+2026-05-24 19:50:57,148 | INFO | preprocessing | Creating risk features
+2026-05-24 19:50:57,194 | INFO | preprocessing | Dropping high null columns
+2026-05-24 19:50:58,279 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 19:50:58,408 | INFO | preprocessing | Handling missing values
+2026-05-24 19:51:02,164 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 19:51:09,928 | INFO | preprocessing | Selecting final features
+2026-05-24 19:51:10,009 | INFO | preprocessing | Optimizing memory
+2026-05-24 19:51:10,306 | INFO | preprocessing | Preprocessing completed
+2026-05-24 19:51:10,306 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 19:51:10,306 | INFO | main | Training PD model...
+2026-05-24 19:51:10,306 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 19:51:10,758 | INFO | risk_model | Training XGBoost model
+2026-05-24 19:51:17,855 | INFO | risk_model | Training completed
+2026-05-24 19:51:17,855 | INFO | risk_model | Evaluating model
+2026-05-24 19:51:18,508 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 19:51:18,508 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 19:51:19,570 | INFO | main | Running ECL engine...
+2026-05-24 19:51:19,570 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 19:51:44,761 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 19:51:44,762 | INFO | main | Running validation engine...
+2026-05-24 19:51:44,762 | INFO | validation | Starting validation engine
+2026-05-24 19:51:44,762 | INFO | validation | Generating portfolio summary
+2026-05-24 19:51:44,770 | INFO | validation | Running drift analysis
+2026-05-24 19:51:48,442 | INFO | validation | Running bias analysis
+2026-05-24 19:51:48,442 | INFO | validation | Generating risk distribution
+2026-05-24 19:51:48,445 | INFO | validation | Analyzing top risk segments
+2026-05-24 19:51:48,445 | INFO | validation | Validation completed
+2026-05-24 19:51:48,445 | INFO | main | Initializing RAG pipeline...
+2026-05-24 19:51:55,358 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 19:51:55,358 | INFO | rag_pipeline | Building vector database
+2026-05-24 19:51:55,358 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 19:51:55,358 | INFO | rag_pipeline | Loading PDF: ifrs9Z_financial_instruments.pdf
+2026-05-24 19:51:55,967 | INFO | rag_pipeline | Loading PDF: rbi_digital_lending_directions_2025.pdf
+2026-05-24 19:51:56,108 | INFO | rag_pipeline | Loading PDF: eu_ai_act_annex_iii.pdf
+2026-05-24 19:51:56,139 | INFO | rag_pipeline | Loading PDF: ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 19:51:56,474 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 19:51:56,474 | INFO | rag_pipeline | Chunking documents
+2026-05-24 19:51:56,480 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-24 19:51:56,480 | INFO | rag_pipeline | Valid chunks: 656
+2026-05-24 19:51:56,480 | INFO | rag_pipeline | Creating FAISS embeddings
+2026-05-24 19:51:56,480 | INFO | rag_pipeline | Embedding batch 0 -> 64
+2026-05-24 20:50:13,361 | INFO | main | Loading dataset...
+2026-05-24 20:50:13,361 | INFO | main | Starting preprocessing...
+2026-05-24 20:50:13,361 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 20:50:13,361 | INFO | preprocessing | Loading raw dataset
+2026-05-24 20:52:31,919 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 20:52:37,400 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 20:52:37,957 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 20:52:38,094 | INFO | preprocessing | Creating default target
+2026-05-24 20:52:38,356 | INFO | preprocessing | Processing date columns
+2026-05-24 20:52:38,572 | INFO | preprocessing | Processing employment length
+2026-05-24 20:52:38,852 | INFO | preprocessing | Processing percentage columns
+2026-05-24 20:52:40,261 | INFO | preprocessing | Creating risk features
+2026-05-24 20:52:40,283 | INFO | preprocessing | Dropping high null columns
+2026-05-24 20:52:41,387 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 20:52:41,516 | INFO | preprocessing | Handling missing values
+2026-05-24 20:52:45,236 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 20:52:53,129 | INFO | preprocessing | Selecting final features
+2026-05-24 20:52:53,242 | INFO | preprocessing | Optimizing memory
+2026-05-24 20:52:53,517 | INFO | preprocessing | Preprocessing completed
+2026-05-24 20:52:53,517 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 20:52:53,517 | INFO | main | Training PD model...
+2026-05-24 20:52:53,518 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 20:52:53,965 | INFO | risk_model | Training XGBoost model
+2026-05-24 20:53:01,090 | INFO | risk_model | Training completed
+2026-05-24 20:53:01,090 | INFO | risk_model | Evaluating model
+2026-05-24 20:53:01,829 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 20:53:01,829 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 20:53:02,881 | INFO | main | Running ECL engine...
+2026-05-24 20:53:02,881 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 20:53:28,415 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 20:53:28,415 | INFO | main | Running validation engine...
+2026-05-24 20:53:28,415 | INFO | validation | Starting validation engine
+2026-05-24 20:53:28,415 | INFO | validation | Generating portfolio summary
+2026-05-24 20:53:28,423 | INFO | validation | Running drift analysis
+2026-05-24 20:53:32,184 | INFO | validation | Running bias analysis
+2026-05-24 20:53:32,184 | INFO | validation | Generating risk distribution
+2026-05-24 20:53:32,187 | INFO | validation | Analyzing top risk segments
+2026-05-24 20:53:32,187 | INFO | validation | Validation completed
+2026-05-24 20:53:32,187 | INFO | main | Initializing RAG pipeline...
+2026-05-24 20:53:39,421 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 20:53:39,422 | INFO | rag_pipeline | Building vector database
+2026-05-24 20:53:39,422 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 20:53:39,422 | INFO | rag_pipeline | Loading PDF: ifrs9Z_financial_instruments.pdf
+2026-05-24 20:53:40,066 | INFO | rag_pipeline | Loading PDF: rbi_digital_lending_directions_2025.pdf
+2026-05-24 20:53:40,220 | INFO | rag_pipeline | Loading PDF: eu_ai_act_annex_iii.pdf
+2026-05-24 20:53:40,257 | INFO | rag_pipeline | Loading PDF: ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 20:53:40,614 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 20:53:40,614 | INFO | rag_pipeline | Chunking documents
+2026-05-24 20:53:40,620 | INFO | rag_pipeline | Generated 657 chunks
+2026-05-24 20:53:40,620 | INFO | rag_pipeline | Valid chunks: 657
+2026-05-24 20:53:40,620 | INFO | rag_pipeline | Creating FAISS embeddings
+2026-05-24 20:53:40,620 | INFO | rag_pipeline | Embedding batch 0 -> 64
+2026-05-24 22:31:19,891 | INFO | main | Loading dataset...
+2026-05-24 22:31:19,891 | INFO | main | Starting preprocessing...
+2026-05-24 22:31:19,891 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 22:31:19,891 | INFO | preprocessing | Loading raw dataset
+2026-05-24 22:33:12,363 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 22:33:17,812 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 22:33:18,364 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 22:33:18,500 | INFO | preprocessing | Creating default target
+2026-05-24 22:33:18,764 | INFO | preprocessing | Processing date columns
+2026-05-24 22:33:18,978 | INFO | preprocessing | Processing employment length
+2026-05-24 22:33:19,259 | INFO | preprocessing | Processing percentage columns
+2026-05-24 22:33:20,636 | INFO | preprocessing | Creating risk features
+2026-05-24 22:33:20,681 | INFO | preprocessing | Dropping high null columns
+2026-05-24 22:33:21,760 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 22:33:21,885 | INFO | preprocessing | Handling missing values
+2026-05-24 22:33:25,589 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 22:33:33,680 | INFO | preprocessing | Selecting final features
+2026-05-24 22:33:33,757 | INFO | preprocessing | Optimizing memory
+2026-05-24 22:33:34,020 | INFO | preprocessing | Preprocessing completed
+2026-05-24 22:33:34,020 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 22:33:34,020 | INFO | main | Training PD model...
+2026-05-24 22:33:34,020 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 22:33:34,463 | INFO | risk_model | Training XGBoost model
+2026-05-24 22:33:41,664 | INFO | risk_model | Training completed
+2026-05-24 22:33:41,664 | INFO | risk_model | Evaluating model
+2026-05-24 22:33:42,320 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 22:33:42,321 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 22:33:43,328 | INFO | main | Running ECL engine...
+2026-05-24 22:33:43,328 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 22:34:08,924 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 22:34:08,924 | INFO | main | Running validation engine...
+2026-05-24 22:34:08,925 | INFO | validation | Starting validation engine
+2026-05-24 22:34:08,925 | INFO | validation | Generating portfolio summary
+2026-05-24 22:34:08,932 | INFO | validation | Running drift analysis
+2026-05-24 22:34:12,547 | INFO | validation | Running bias analysis
+2026-05-24 22:34:12,548 | INFO | validation | Generating risk distribution
+2026-05-24 22:34:12,550 | INFO | validation | Analyzing top risk segments
+2026-05-24 22:34:12,550 | INFO | validation | Validation completed
+2026-05-24 22:34:12,550 | INFO | main | Initializing RAG pipeline...
+2026-05-24 22:34:12,582 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 22:34:12,582 | INFO | rag_pipeline | Building vector database
+2026-05-24 22:34:12,582 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 22:34:12,582 | INFO | rag_pipeline | Loading PDF: ifrs9Z_financial_instruments.pdf
+2026-05-24 22:34:13,202 | INFO | rag_pipeline | Loading PDF: rbi_digital_lending_directions_2025.pdf
+2026-05-24 22:34:13,355 | INFO | rag_pipeline | Loading PDF: eu_ai_act_annex_iii.pdf
+2026-05-24 22:34:13,391 | INFO | rag_pipeline | Loading PDF: ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 22:34:13,723 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 22:34:13,723 | INFO | rag_pipeline | Chunking documents
+2026-05-24 22:34:13,728 | INFO | rag_pipeline | Generated 760 chunks
+2026-05-24 22:34:13,728 | INFO | rag_pipeline | Creating FAISS embeddings
+2026-05-24 22:34:13,728 | INFO | rag_pipeline | Embedding batch 0 -> 20
+2026-05-24 23:05:25,900 | INFO | main | Loading dataset...
+2026-05-24 23:05:25,900 | INFO | main | Starting preprocessing...
+2026-05-24 23:05:25,900 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 23:05:25,900 | INFO | preprocessing | Loading raw dataset
+2026-05-24 23:07:51,217 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 23:07:56,544 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 23:07:57,095 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 23:07:57,229 | INFO | preprocessing | Creating default target
+2026-05-24 23:07:57,490 | INFO | preprocessing | Processing date columns
+2026-05-24 23:07:57,710 | INFO | preprocessing | Processing employment length
+2026-05-24 23:07:57,989 | INFO | preprocessing | Processing percentage columns
+2026-05-24 23:07:59,390 | INFO | preprocessing | Creating risk features
+2026-05-24 23:07:59,435 | INFO | preprocessing | Dropping high null columns
+2026-05-24 23:08:00,508 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 23:08:00,635 | INFO | preprocessing | Handling missing values
+2026-05-24 23:08:04,361 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 23:08:11,899 | INFO | preprocessing | Selecting final features
+2026-05-24 23:08:11,978 | INFO | preprocessing | Optimizing memory
+2026-05-24 23:08:12,225 | INFO | preprocessing | Preprocessing completed
+2026-05-24 23:08:12,225 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 23:08:12,225 | INFO | main | Training PD model...
+2026-05-24 23:08:12,226 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 23:08:12,657 | INFO | risk_model | Training XGBoost model
+2026-05-24 23:08:19,597 | INFO | risk_model | Training completed
+2026-05-24 23:08:19,597 | INFO | risk_model | Evaluating model
+2026-05-24 23:08:20,240 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 23:08:20,240 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 23:08:21,248 | INFO | main | Running ECL engine...
+2026-05-24 23:08:21,248 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 23:08:46,788 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 23:08:46,788 | INFO | main | Running validation engine...
+2026-05-24 23:08:46,788 | INFO | validation | Starting validation engine
+2026-05-24 23:08:46,788 | INFO | validation | Generating portfolio summary
+2026-05-24 23:08:46,798 | INFO | validation | Running drift analysis
+2026-05-24 23:08:50,384 | INFO | validation | Running bias analysis
+2026-05-24 23:08:50,384 | INFO | validation | Generating risk distribution
+2026-05-24 23:08:50,387 | INFO | validation | Analyzing top risk segments
+2026-05-24 23:08:50,387 | INFO | validation | Validation completed
+2026-05-24 23:08:50,387 | INFO | main | Initializing RAG pipeline...
+2026-05-24 23:08:50,387 | INFO | rag_pipeline | Initializing RAG pipeline
+2026-05-24 23:08:50,418 | INFO | rag_pipeline | Creating new vector database
+2026-05-24 23:08:50,418 | INFO | rag_pipeline | Building FAISS vector database
+2026-05-24 23:08:50,418 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 23:08:50,418 | INFO | rag_pipeline | Loading PDF -> ifrs9Z_financial_instruments.pdf
+2026-05-24 23:08:51,062 | INFO | rag_pipeline | Loading PDF -> rbi_digital_lending_directions_2025.pdf
+2026-05-24 23:08:51,216 | INFO | rag_pipeline | Loading PDF -> eu_ai_act_annex_iii.pdf
+2026-05-24 23:08:51,252 | INFO | rag_pipeline | Loading PDF -> ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 23:08:51,576 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 23:08:51,577 | INFO | rag_pipeline | Chunking documents
+2026-05-24 23:08:51,582 | INFO | rag_pipeline | Generated 657 chunks
+2026-05-24 23:10:43,255 | INFO | main | Loading dataset...
+2026-05-24 23:10:43,255 | INFO | main | Starting preprocessing...
+2026-05-24 23:10:43,255 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-24 23:10:43,255 | INFO | preprocessing | Loading raw dataset
+2026-05-24 23:12:16,665 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-24 23:12:22,108 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-24 23:12:22,654 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-24 23:12:22,790 | INFO | preprocessing | Creating default target
+2026-05-24 23:12:23,053 | INFO | preprocessing | Processing date columns
+2026-05-24 23:12:23,264 | INFO | preprocessing | Processing employment length
+2026-05-24 23:12:23,544 | INFO | preprocessing | Processing percentage columns
+2026-05-24 23:12:24,920 | INFO | preprocessing | Creating risk features
+2026-05-24 23:12:24,964 | INFO | preprocessing | Dropping high null columns
+2026-05-24 23:12:26,047 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-24 23:12:26,175 | INFO | preprocessing | Handling missing values
+2026-05-24 23:12:29,918 | INFO | preprocessing | Encoding categorical columns
+2026-05-24 23:12:37,543 | INFO | preprocessing | Selecting final features
+2026-05-24 23:12:37,621 | INFO | preprocessing | Optimizing memory
+2026-05-24 23:12:37,866 | INFO | preprocessing | Preprocessing completed
+2026-05-24 23:12:37,866 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-24 23:12:37,866 | INFO | main | Training PD model...
+2026-05-24 23:12:37,866 | INFO | risk_model | Preparing train/test datasets
+2026-05-24 23:12:38,299 | INFO | risk_model | Training XGBoost model
+2026-05-24 23:12:45,161 | INFO | risk_model | Training completed
+2026-05-24 23:12:45,161 | INFO | risk_model | Evaluating model
+2026-05-24 23:12:45,809 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 23:12:45,810 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-24 23:12:46,808 | INFO | main | Running ECL engine...
+2026-05-24 23:12:46,808 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-24 23:13:11,606 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-24 23:13:11,606 | INFO | main | Running validation engine...
+2026-05-24 23:13:11,606 | INFO | validation | Starting validation engine
+2026-05-24 23:13:11,606 | INFO | validation | Generating portfolio summary
+2026-05-24 23:13:11,614 | INFO | validation | Running drift analysis
+2026-05-24 23:13:15,233 | INFO | validation | Running bias analysis
+2026-05-24 23:13:15,233 | INFO | validation | Generating risk distribution
+2026-05-24 23:13:15,236 | INFO | validation | Analyzing top risk segments
+2026-05-24 23:13:15,236 | INFO | validation | Validation completed
+2026-05-24 23:13:15,236 | INFO | main | Initializing RAG pipeline...
+2026-05-24 23:13:15,246 | INFO | rag_pipeline | Creating new vector DB
+2026-05-24 23:13:15,246 | INFO | rag_pipeline | Building vector database
+2026-05-24 23:13:15,246 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-24 23:13:15,246 | INFO | rag_pipeline | Loading PDF -> ifrs9Z_financial_instruments.pdf
+2026-05-24 23:13:15,864 | INFO | rag_pipeline | Loading PDF -> rbi_digital_lending_directions_2025.pdf
+2026-05-24 23:13:16,016 | INFO | rag_pipeline | Loading PDF -> eu_ai_act_annex_iii.pdf
+2026-05-24 23:13:16,051 | INFO | rag_pipeline | Loading PDF -> ecb_ssm_priorities_2026_2028.pdf
+2026-05-24 23:13:16,373 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-24 23:13:16,373 | INFO | rag_pipeline | Chunking documents
+2026-05-24 23:13:16,378 | INFO | rag_pipeline | Generated 657 chunks
+2026-05-26 17:58:06,370 | INFO | main | Loading dataset...
+2026-05-26 17:58:06,370 | INFO | main | Starting preprocessing...
+2026-05-26 17:58:06,370 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-26 17:58:06,370 | INFO | preprocessing | Loading raw dataset
+2026-05-26 17:59:11,470 | INFO | risk_model | Loading model
+2026-05-26 17:59:59,186 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-26 18:00:04,942 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-26 18:00:05,508 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-26 18:00:05,643 | INFO | preprocessing | Creating default target
+2026-05-26 18:00:05,907 | INFO | preprocessing | Processing date columns
+2026-05-26 18:00:06,121 | INFO | preprocessing | Processing employment length
+2026-05-26 18:00:06,404 | INFO | preprocessing | Processing percentage columns
+2026-05-26 18:00:07,793 | INFO | preprocessing | Creating risk features
+2026-05-26 18:00:07,841 | INFO | preprocessing | Dropping high null columns
+2026-05-26 18:00:08,926 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-26 18:00:09,058 | INFO | preprocessing | Handling missing values
+2026-05-26 18:00:12,929 | INFO | preprocessing | Encoding categorical columns
+2026-05-26 18:00:20,820 | INFO | preprocessing | Selecting final features
+2026-05-26 18:00:20,913 | INFO | preprocessing | Optimizing memory
+2026-05-26 18:00:21,200 | INFO | preprocessing | Preprocessing completed
+2026-05-26 18:00:21,200 | INFO | preprocessing | Final Shape: (2260701, 23)
+2026-05-26 18:00:21,200 | INFO | main | Training PD model...
+2026-05-26 18:00:21,200 | INFO | risk_model | Preparing train/test datasets
+2026-05-26 18:00:21,645 | INFO | risk_model | Training XGBoost model
+2026-05-26 18:00:28,448 | INFO | risk_model | Training completed
+2026-05-26 18:00:28,449 | INFO | risk_model | Evaluating model
+2026-05-26 18:00:29,089 | INFO | risk_model | Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-26 18:00:29,089 | INFO | main | Model Metrics: {'auc': 0.7509056480211055, 'accuracy': 0.8699587075713108, 'precision': 0.5480984340044742, 'recall': 0.0083215868756687, 'f1_score': 0.016394265352894927}
+2026-05-26 18:00:30,100 | INFO | main | Running ECL engine...
+2026-05-26 18:00:30,100 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-26 18:00:55,781 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-26 18:00:55,781 | INFO | main | Running validation engine...
+2026-05-26 18:00:55,781 | INFO | validation | Starting validation engine
+2026-05-26 18:00:55,781 | INFO | validation | Generating portfolio summary
+2026-05-26 18:00:55,789 | INFO | validation | Running drift analysis
+2026-05-26 18:00:59,428 | INFO | validation | Running bias analysis
+2026-05-26 18:00:59,428 | INFO | validation | Generating risk distribution
+2026-05-26 18:00:59,431 | INFO | validation | Analyzing top risk segments
+2026-05-26 18:00:59,431 | INFO | validation | Validation completed
+2026-05-26 18:00:59,431 | INFO | main | Initializing RAG pipeline...
+2026-05-26 18:00:59,463 | INFO | rag_pipeline | Creating new vector DB
+2026-05-26 18:00:59,463 | INFO | rag_pipeline | Building vector database
+2026-05-26 18:00:59,463 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-26 18:00:59,464 | INFO | rag_pipeline | Loading PDF -> ifrs9Z_financial_instruments.pdf
+2026-05-26 18:00:59,977 | INFO | rag_pipeline | Loading PDF -> rbi_digital_lending_directions_2025.pdf
+2026-05-26 18:01:00,111 | INFO | rag_pipeline | Loading PDF -> eu_ai_act_annex_iii.pdf
+2026-05-26 18:01:00,178 | INFO | rag_pipeline | Loading PDF -> ecb_ssm_priorities_2026_2028.pdf
+2026-05-26 18:01:00,489 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-26 18:01:00,489 | INFO | rag_pipeline | Chunking documents
+2026-05-26 18:01:00,494 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-26 19:11:13,480 | INFO | risk_model | Loading model
+2026-05-26 19:11:14,529 | INFO | risk_model | Loading model
+2026-05-26 19:11:15,590 | INFO | risk_model | Loading model
+2026-05-26 19:11:16,598 | INFO | risk_model | Loading model
+2026-05-26 19:11:46,488 | INFO | risk_model | Loading model
+2026-05-26 19:11:47,524 | INFO | risk_model | Loading model
+2026-05-26 19:11:48,538 | INFO | risk_model | Loading model
+2026-05-26 19:11:49,554 | INFO | risk_model | Loading model
+2026-05-26 19:12:01,034 | INFO | risk_model | Loading model
+2026-05-26 19:12:28,958 | INFO | risk_model | Loading model
+2026-05-26 19:12:30,009 | INFO | risk_model | Loading model
+2026-05-26 19:12:31,054 | INFO | risk_model | Loading model
+2026-05-26 19:13:06,531 | INFO | risk_model | Loading model
+2026-05-26 19:13:07,565 | INFO | risk_model | Loading model
+2026-05-26 19:13:08,641 | INFO | risk_model | Loading model
+2026-05-26 19:13:26,042 | INFO | risk_model | Loading model
+2026-05-26 19:13:27,000 | INFO | risk_model | Loading model
+2026-05-26 19:13:36,262 | INFO | risk_model | Loading model
+2026-05-26 19:13:37,415 | INFO | risk_model | Loading model
+2026-05-26 19:19:18,016 | INFO | risk_model | Loading model
+2026-05-26 19:19:19,143 | INFO | risk_model | Loading model
+2026-05-26 19:19:20,290 | INFO | risk_model | Loading model
+2026-05-26 19:20:55,701 | INFO | risk_model | Loading model
+2026-05-26 19:22:57,180 | INFO | risk_model | Loading model
+2026-05-26 19:22:58,227 | INFO | risk_model | Loading model
+2026-05-26 19:22:59,251 | INFO | risk_model | Loading model
+2026-05-26 19:23:03,296 | INFO | risk_model | Loading model
+2026-05-26 19:23:04,339 | INFO | risk_model | Loading model
+2026-05-26 19:23:15,028 | INFO | main | Loading dataset...
+2026-05-26 19:23:15,028 | INFO | main | Starting preprocessing...
+2026-05-26 19:23:15,028 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-26 19:23:15,028 | INFO | preprocessing | Loading raw dataset
+2026-05-26 19:25:01,699 | INFO | risk_model | Loading model
+2026-05-26 19:25:02,811 | INFO | risk_model | Loading model
+2026-05-26 19:25:03,838 | INFO | risk_model | Loading model
+2026-05-26 19:25:13,968 | INFO | risk_model | Loading model
+2026-05-26 19:25:14,987 | INFO | risk_model | Loading model
+2026-05-26 19:25:15,999 | INFO | risk_model | Loading model
+2026-05-26 19:25:18,404 | INFO | main | Loading dataset...
+2026-05-26 19:25:18,404 | INFO | main | Starting preprocessing...
+2026-05-26 19:25:18,404 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-26 19:25:18,404 | INFO | preprocessing | Loading raw dataset
+2026-05-26 19:27:31,575 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-26 19:27:37,453 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-26 19:27:38,071 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-26 19:27:38,210 | INFO | preprocessing | Creating default target
+2026-05-26 19:27:38,470 | INFO | preprocessing | Processing date columns
+2026-05-26 19:30:30,573 | INFO | risk_model | Loading model
+2026-05-26 19:30:31,602 | INFO | risk_model | Loading model
+2026-05-26 19:30:32,559 | INFO | risk_model | Loading model
+2026-05-26 19:30:35,548 | INFO | main | Loading dataset...
+2026-05-26 19:30:35,548 | INFO | main | Starting preprocessing...
+2026-05-26 19:30:35,548 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-26 19:30:35,548 | INFO | preprocessing | Loading raw dataset
+2026-05-26 19:32:19,027 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-26 19:32:26,307 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-26 19:32:27,183 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-26 19:32:27,329 | INFO | preprocessing | Creating default target
+2026-05-26 19:32:27,590 | INFO | preprocessing | Processing date columns
+2026-05-26 19:32:28,275 | INFO | preprocessing | Processing employment length
+2026-05-26 19:32:28,561 | INFO | preprocessing | Processing percentage columns
+2026-05-26 19:32:29,949 | INFO | preprocessing | Creating risk features
+2026-05-26 19:32:29,976 | INFO | preprocessing | Dropping high null columns
+2026-05-26 19:32:31,160 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-26 19:32:31,299 | INFO | preprocessing | Handling missing values
+2026-05-26 19:32:35,630 | INFO | preprocessing | Encoding categorical columns
+2026-05-26 19:32:43,855 | INFO | preprocessing | Selecting final features
+2026-05-26 19:32:43,946 | INFO | preprocessing | Optimizing memory
+2026-05-26 19:32:44,201 | INFO | preprocessing | Preprocessing completed
+2026-05-26 19:32:44,201 | INFO | preprocessing | Final Shape: (2260701, 21)
+2026-05-26 19:32:44,201 | INFO | main | Training PD model...
+2026-05-26 19:32:44,202 | INFO | risk_model | Preparing train/test datasets
+2026-05-26 19:32:44,675 | INFO | risk_model | Training XGBoost model
+2026-05-26 19:32:52,682 | INFO | risk_model | Training completed
+2026-05-26 19:32:52,682 | INFO | risk_model | Evaluating model
+2026-05-26 19:32:53,602 | INFO | risk_model | Metrics: {'auc': 0.7201532912465045, 'accuracy': 0.8697596546210142, 'precision': 0.4473684210526316, 'recall': 0.0002887081160946283, 'f1_score': 0.0005770438383598378}
+2026-05-26 19:32:53,603 | INFO | main | Model Metrics: {'auc': 0.7201532912465045, 'accuracy': 0.8697596546210142, 'precision': 0.4473684210526316, 'recall': 0.0002887081160946283, 'f1_score': 0.0005770438383598378}
+2026-05-26 19:32:55,200 | INFO | main | Running ECL engine...
+2026-05-26 19:32:55,200 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-26 19:33:45,909 | INFO | risk_model | Loading model
+2026-05-26 19:33:46,949 | INFO | risk_model | Loading model
+2026-05-26 19:33:48,003 | INFO | risk_model | Loading model
+2026-05-26 19:35:41,729 | INFO | risk_model | Loading model
+2026-05-26 19:35:42,808 | INFO | risk_model | Loading model
+2026-05-26 19:35:43,851 | INFO | risk_model | Loading model
+2026-05-26 19:35:44,856 | INFO | risk_model | Loading model
+2026-05-26 19:35:49,529 | INFO | risk_model | Loading model
+2026-05-26 19:35:50,544 | INFO | risk_model | Loading model
+2026-05-26 19:35:51,622 | INFO | risk_model | Loading model
+2026-05-26 19:35:58,332 | INFO | main | Loading dataset...
+2026-05-26 19:35:58,333 | INFO | main | Starting preprocessing...
+2026-05-26 19:35:58,333 | INFO | main | Running preprocessing pipeline...
+2026-05-26 19:35:58,333 | INFO | preprocessing | Starting preprocessing pipeline
+2026-05-26 19:35:58,333 | INFO | preprocessing | Loading raw dataset
+2026-05-26 19:38:25,897 | INFO | preprocessing | Dataset Shape: (2260701, 151)
+2026-05-26 19:38:31,885 | INFO | preprocessing | Removed 0 duplicate rows
+2026-05-26 19:38:32,443 | INFO | preprocessing | Removed 15 leakage columns
+2026-05-26 19:38:32,579 | INFO | preprocessing | Creating default target
+2026-05-26 19:38:32,839 | INFO | preprocessing | Processing date columns
+2026-05-26 19:38:33,522 | INFO | preprocessing | Processing employment length
+2026-05-26 19:38:33,806 | INFO | preprocessing | Processing percentage columns
+2026-05-26 19:38:35,174 | INFO | preprocessing | Creating risk features
+2026-05-26 19:38:35,196 | INFO | preprocessing | Dropping high null columns
+2026-05-26 19:38:36,320 | INFO | preprocessing | Dropped 38 high-null columns
+2026-05-26 19:38:36,451 | INFO | preprocessing | Handling missing values
+2026-05-26 19:38:40,258 | INFO | preprocessing | Encoding categorical columns
+2026-05-26 19:38:48,901 | INFO | preprocessing | Selecting final features
+2026-05-26 19:38:49,027 | INFO | preprocessing | Optimizing memory
+2026-05-26 19:38:49,309 | INFO | preprocessing | Preprocessing completed
+2026-05-26 19:38:49,309 | INFO | preprocessing | Final Shape: (2260701, 21)
+2026-05-26 19:38:52,241 | INFO | main | Dataset saved to data/processed/final_dataset.parquet
+2026-05-26 19:38:52,241 | INFO | main | Training PD model...
+2026-05-26 19:38:52,241 | INFO | risk_model | Preparing train/test datasets
+2026-05-26 19:38:52,702 | INFO | risk_model | Training XGBoost model
+2026-05-26 19:39:00,792 | INFO | risk_model | Training completed
+2026-05-26 19:39:00,792 | INFO | risk_model | Evaluating model
+2026-05-26 19:39:01,701 | INFO | risk_model | Metrics: {'auc': 0.7201532912465045, 'accuracy': 0.8697596546210142, 'precision': 0.4473684210526316, 'recall': 0.0002887081160946283, 'f1_score': 0.0005770438383598378}
+2026-05-26 19:39:01,701 | INFO | main | Model Metrics: {'auc': 0.7201532912465045, 'accuracy': 0.8697596546210142, 'precision': 0.4473684210526316, 'recall': 0.0002887081160946283, 'f1_score': 0.0005770438383598378}
+2026-05-26 19:39:03,279 | INFO | main | Running ECL engine...
+2026-05-26 19:39:03,279 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-26 19:39:28,512 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-26 19:39:28,513 | INFO | main | Running validation engine...
+2026-05-26 19:39:28,513 | INFO | validation | Starting validation engine
+2026-05-26 19:39:28,513 | INFO | validation | Generating portfolio summary
+2026-05-26 19:39:28,521 | INFO | validation | Running drift analysis
+2026-05-26 19:39:32,228 | INFO | validation | Running bias analysis
+2026-05-26 19:39:32,228 | INFO | validation | Generating risk distribution
+2026-05-26 19:39:32,231 | INFO | validation | Analyzing top risk segments
+2026-05-26 19:39:32,231 | INFO | validation | Validation completed
+2026-05-26 19:39:32,231 | INFO | main | Initializing RAG pipeline...
+2026-05-26 19:39:32,252 | INFO | rag_pipeline | Creating new vector DB
+2026-05-26 19:39:32,252 | INFO | rag_pipeline | Building vector database
+2026-05-26 19:39:32,252 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-26 19:39:32,252 | INFO | rag_pipeline | Loading PDF -> ifrs9Z_financial_instruments.pdf
+2026-05-26 19:39:32,823 | INFO | rag_pipeline | Loading PDF -> rbi_digital_lending_directions_2025.pdf
+2026-05-26 19:39:32,957 | INFO | rag_pipeline | Loading PDF -> eu_ai_act_annex_iii.pdf
+2026-05-26 19:39:32,987 | INFO | rag_pipeline | Loading PDF -> ecb_ssm_priorities_2026_2028.pdf
+2026-05-26 19:39:33,334 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-26 19:39:33,334 | INFO | rag_pipeline | Chunking documents
+2026-05-26 19:39:33,340 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-26 19:47:55,906 | INFO | risk_model | Loading model
+2026-05-26 19:47:57,061 | INFO | risk_model | Loading model
+2026-05-26 19:47:58,270 | INFO | risk_model | Loading model
+2026-05-26 19:48:02,217 | INFO | main | Loading dataset...
+2026-05-26 19:48:02,217 | INFO | main | Starting preprocessing...
+2026-05-26 19:48:02,217 | INFO | main | Loading processed dataset from cache...
+2026-05-26 19:48:05,895 | INFO | main | Training PD model...
+2026-05-26 19:48:05,895 | INFO | risk_model | Preparing train/test datasets
+2026-05-26 19:48:06,275 | INFO | risk_model | Training XGBoost model
+2026-05-26 19:48:17,152 | INFO | risk_model | Training completed
+2026-05-26 19:48:17,152 | INFO | risk_model | Evaluating model
+2026-05-26 19:48:18,249 | INFO | risk_model | Metrics: {'auc': 0.7201532912465045, 'accuracy': 0.8697596546210142, 'precision': 0.4473684210526316, 'recall': 0.0002887081160946283, 'f1_score': 0.0005770438383598378}
+2026-05-26 19:48:18,249 | INFO | main | Model Metrics: {'auc': 0.7201532912465045, 'accuracy': 0.8697596546210142, 'precision': 0.4473684210526316, 'recall': 0.0002887081160946283, 'f1_score': 0.0005770438383598378}
+2026-05-26 19:48:20,397 | INFO | main | Running ECL engine...
+2026-05-26 19:48:20,397 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-26 19:48:48,835 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-26 19:48:48,836 | INFO | main | Running validation engine...
+2026-05-26 19:48:48,836 | INFO | validation | Starting validation engine
+2026-05-26 19:48:48,836 | INFO | validation | Generating portfolio summary
+2026-05-26 19:48:48,848 | INFO | validation | Running drift analysis
+2026-05-26 19:48:52,485 | INFO | validation | Running bias analysis
+2026-05-26 19:48:52,485 | INFO | validation | Generating risk distribution
+2026-05-26 19:48:52,488 | INFO | validation | Analyzing top risk segments
+2026-05-26 19:48:52,488 | INFO | validation | Validation completed
+2026-05-26 19:48:52,488 | INFO | main | Initializing RAG pipeline...
+2026-05-26 19:48:52,511 | INFO | rag_pipeline | Creating new vector DB
+2026-05-26 19:48:52,511 | INFO | rag_pipeline | Building vector database
+2026-05-26 19:48:52,511 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-26 19:48:52,511 | INFO | rag_pipeline | Loading PDF -> ifrs9Z_financial_instruments.pdf
+2026-05-26 19:48:53,075 | INFO | rag_pipeline | Loading PDF -> rbi_digital_lending_directions_2025.pdf
+2026-05-26 19:48:53,209 | INFO | rag_pipeline | Loading PDF -> eu_ai_act_annex_iii.pdf
+2026-05-26 19:48:53,240 | INFO | rag_pipeline | Loading PDF -> ecb_ssm_priorities_2026_2028.pdf
+2026-05-26 19:48:53,585 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-26 19:48:53,585 | INFO | rag_pipeline | Chunking documents
+2026-05-26 19:48:53,590 | INFO | rag_pipeline | Generated 656 chunks
+2026-05-26 20:21:52,126 | INFO | main | Loading dataset...
+2026-05-26 20:21:52,126 | INFO | main | Starting preprocessing...
+2026-05-26 20:21:52,126 | INFO | main | Loading processed dataset from cache...
+2026-05-26 20:21:52,364 | INFO | main | Training PD model...
+2026-05-26 20:21:52,364 | INFO | risk_model | Preparing train/test datasets
+2026-05-26 20:21:52,768 | INFO | risk_model | Training XGBoost model
+2026-05-26 20:22:00,636 | INFO | risk_model | Training completed
+2026-05-26 20:22:00,638 | INFO | risk_model | Evaluating model
+2026-05-26 20:22:01,400 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-26 20:22:01,401 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-26 20:22:02,941 | INFO | main | Running ECL engine...
+2026-05-26 20:22:02,941 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-26 20:22:28,813 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-26 20:22:28,814 | INFO | main | Running validation engine...
+2026-05-26 20:22:28,814 | INFO | validation | Starting validation engine
+2026-05-26 20:22:28,814 | INFO | validation | Generating portfolio summary
+2026-05-26 20:22:28,824 | INFO | validation | Running drift analysis
+2026-05-26 20:22:29,718 | INFO | validation | Running bias analysis
+2026-05-26 20:22:29,718 | INFO | validation | Generating risk distribution
+2026-05-26 20:22:29,723 | INFO | validation | Analyzing top risk segments
+2026-05-26 20:22:29,723 | INFO | validation | Validation completed
+2026-05-26 20:22:29,723 | INFO | main | Initializing RAG pipeline...
+2026-05-26 20:22:57,438 | INFO | rag_pipeline | Creating new vector DB
+2026-05-26 20:22:57,439 | INFO | rag_pipeline | Building vector database
+2026-05-26 20:22:57,439 | INFO | rag_pipeline | Loading regulatory PDFs
+2026-05-26 20:22:57,440 | INFO | rag_pipeline | Loading PDF -> ifrs9Z_financial_instruments.pdf
+2026-05-26 20:22:58,178 | INFO | rag_pipeline | Loading PDF -> rbi_digital_lending_directions_2025.pdf
+2026-05-26 20:22:58,331 | INFO | rag_pipeline | Loading PDF -> eu_ai_act_annex_iii.pdf
+2026-05-26 20:22:58,365 | INFO | rag_pipeline | Loading PDF -> ecb_ssm_priorities_2026_2028.pdf
+2026-05-26 20:22:58,722 | INFO | rag_pipeline | Loaded 231 pages
+2026-05-26 20:22:58,722 | INFO | rag_pipeline | Chunking documents
+2026-05-26 20:22:58,729 | INFO | rag_pipeline | Generated 657 chunks
+2026-05-26 20:23:20,397 | INFO | rag_pipeline | Vector DB created successfully
+2026-05-26 20:23:20,400 | INFO | main | Initializing agents...
+2026-05-26 20:23:44,319 | INFO | workflow | Building LangGraph workflow
+2026-05-26 20:23:44,341 | INFO | main | Building Knowledge Graph...
+2026-05-26 20:23:44,342 | INFO | neo4j_manager | Neo4j connection initialized
+2026-05-26 20:23:44,342 | INFO | graph_builder | Building Neo4j knowledge graph
+2026-05-26 20:23:44,782 | INFO | neo4j_manager | Neo4j constraints created
+2026-05-26 20:23:44,782 | INFO | graph_builder | Creating borrower nodes
+2026-05-27 09:56:28,193 | INFO | main | Loading dataset...
+2026-05-27 09:56:28,193 | INFO | main | Starting preprocessing...
+2026-05-27 09:56:28,193 | INFO | main | Loading processed dataset from cache...
+2026-05-27 09:56:28,502 | INFO | main | Training PD model...
+2026-05-27 09:56:28,502 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 09:56:28,916 | INFO | risk_model | Training XGBoost model
+2026-05-27 09:56:36,464 | INFO | risk_model | Training completed
+2026-05-27 09:56:36,464 | INFO | risk_model | Evaluating model
+2026-05-27 09:56:37,216 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 09:56:37,217 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 09:56:38,705 | INFO | main | Running ECL engine...
+2026-05-27 09:56:38,705 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 09:57:04,245 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 09:57:04,246 | INFO | main | Running validation engine...
+2026-05-27 09:57:04,246 | INFO | validation | Starting validation engine
+2026-05-27 09:57:04,246 | INFO | validation | Generating portfolio summary
+2026-05-27 09:57:04,255 | INFO | validation | Running drift analysis
+2026-05-27 09:57:05,134 | INFO | validation | Running bias analysis
+2026-05-27 09:57:05,135 | INFO | validation | Generating risk distribution
+2026-05-27 09:57:05,138 | INFO | validation | Analyzing top risk segments
+2026-05-27 09:57:05,138 | INFO | validation | Validation completed
+2026-05-27 09:57:05,138 | INFO | main | Initializing RAG pipeline...
+2026-05-27 09:57:10,061 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 09:57:10,062 | INFO | rag_pipeline | Loading vector database
+2026-05-27 09:57:10,119 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 09:57:10,119 | INFO | main | Initializing agents...
+2026-05-27 09:57:33,196 | INFO | workflow | Building LangGraph workflow
+2026-05-27 09:57:33,209 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:14:25,301 | INFO | main | Loading dataset...
+2026-05-27 10:14:25,301 | INFO | main | Starting preprocessing...
+2026-05-27 10:14:25,301 | INFO | main | Loading processed dataset from cache...
+2026-05-27 10:14:25,498 | INFO | main | Training PD model...
+2026-05-27 10:14:25,498 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 10:14:25,907 | INFO | risk_model | Training XGBoost model
+2026-05-27 10:14:33,435 | INFO | risk_model | Training completed
+2026-05-27 10:14:33,435 | INFO | risk_model | Evaluating model
+2026-05-27 10:14:34,183 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:14:34,183 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:14:35,660 | INFO | main | Running ECL engine...
+2026-05-27 10:14:35,660 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 10:15:01,070 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 10:15:01,072 | INFO | main | Running validation engine...
+2026-05-27 10:15:01,072 | INFO | validation | Starting validation engine
+2026-05-27 10:15:01,072 | INFO | validation | Generating portfolio summary
+2026-05-27 10:15:01,081 | INFO | validation | Running drift analysis
+2026-05-27 10:15:01,964 | INFO | validation | Running bias analysis
+2026-05-27 10:15:01,964 | INFO | validation | Generating risk distribution
+2026-05-27 10:15:01,968 | INFO | validation | Analyzing top risk segments
+2026-05-27 10:15:01,968 | INFO | validation | Validation completed
+2026-05-27 10:15:01,968 | INFO | main | Initializing RAG pipeline...
+2026-05-27 10:15:06,737 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 10:15:06,737 | INFO | rag_pipeline | Loading vector database
+2026-05-27 10:15:06,803 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 10:15:06,803 | INFO | main | Initializing agents...
+2026-05-27 10:15:29,560 | INFO | workflow | Building LangGraph workflow
+2026-05-27 10:15:29,585 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:15:29,586 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 10:15:29,586 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 10:15:29,586 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 10:15:29,587 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:15:29,587 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:15:29,588 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:15:29,588 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:15:29,588 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 10:15:58,801 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:15:58,802 | ERROR | CreditRiskGraphBuilder | Graph build failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:21:08,886 | INFO | main | Loading dataset...
+2026-05-27 10:21:08,886 | INFO | main | Starting preprocessing...
+2026-05-27 10:21:08,886 | INFO | main | Loading processed dataset from cache...
+2026-05-27 10:21:09,079 | INFO | main | Training PD model...
+2026-05-27 10:21:09,080 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 10:21:09,483 | INFO | risk_model | Training XGBoost model
+2026-05-27 10:21:17,032 | INFO | risk_model | Training completed
+2026-05-27 10:21:17,032 | INFO | risk_model | Evaluating model
+2026-05-27 10:21:17,783 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:21:17,783 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:21:19,269 | INFO | main | Running ECL engine...
+2026-05-27 10:21:19,270 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 10:21:44,537 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 10:21:44,538 | INFO | main | Running validation engine...
+2026-05-27 10:21:44,539 | INFO | validation | Starting validation engine
+2026-05-27 10:21:44,539 | INFO | validation | Generating portfolio summary
+2026-05-27 10:21:44,548 | INFO | validation | Running drift analysis
+2026-05-27 10:21:45,451 | INFO | validation | Running bias analysis
+2026-05-27 10:21:45,451 | INFO | validation | Generating risk distribution
+2026-05-27 10:21:45,455 | INFO | validation | Analyzing top risk segments
+2026-05-27 10:21:45,455 | INFO | validation | Validation completed
+2026-05-27 10:21:45,455 | INFO | main | Initializing RAG pipeline...
+2026-05-27 10:21:50,204 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 10:21:50,204 | INFO | rag_pipeline | Loading vector database
+2026-05-27 10:21:50,267 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 10:21:50,267 | INFO | main | Initializing agents...
+2026-05-27 10:22:13,237 | INFO | workflow | Building LangGraph workflow
+2026-05-27 10:22:13,249 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:22:13,250 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 10:22:13,250 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 10:22:13,250 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 10:22:13,252 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:22:13,253 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:22:13,253 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:22:13,253 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:22:13,253 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 10:22:42,621 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:22:42,621 | ERROR | CreditRiskGraphBuilder | Graph build failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 10:25:17,258 | INFO | main | Loading dataset...
+2026-05-27 10:25:17,258 | INFO | main | Starting preprocessing...
+2026-05-27 10:25:17,258 | INFO | main | Loading processed dataset from cache...
+2026-05-27 10:25:17,482 | INFO | main | Training PD model...
+2026-05-27 10:25:17,482 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 10:25:18,025 | INFO | risk_model | Training XGBoost model
+2026-05-27 10:25:25,703 | INFO | risk_model | Training completed
+2026-05-27 10:25:25,703 | INFO | risk_model | Evaluating model
+2026-05-27 10:25:26,469 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:25:26,469 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:25:27,972 | INFO | main | Running ECL engine...
+2026-05-27 10:25:27,972 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 10:25:53,470 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 10:25:53,471 | INFO | main | Running validation engine...
+2026-05-27 10:25:53,471 | INFO | validation | Starting validation engine
+2026-05-27 10:25:53,471 | INFO | validation | Generating portfolio summary
+2026-05-27 10:25:53,480 | INFO | validation | Running drift analysis
+2026-05-27 10:25:54,360 | INFO | validation | Running bias analysis
+2026-05-27 10:25:54,360 | INFO | validation | Generating risk distribution
+2026-05-27 10:25:54,364 | INFO | validation | Analyzing top risk segments
+2026-05-27 10:25:54,364 | INFO | validation | Validation completed
+2026-05-27 10:25:54,364 | INFO | main | Initializing RAG pipeline...
+2026-05-27 10:25:59,182 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 10:25:59,183 | INFO | rag_pipeline | Loading vector database
+2026-05-27 10:25:59,233 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 10:25:59,233 | INFO | main | Initializing agents...
+2026-05-27 10:26:22,923 | INFO | workflow | Building LangGraph workflow
+2026-05-27 10:26:22,931 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:26:22,931 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 10:26:22,931 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 10:26:22,931 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 10:26:23,246 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 10:27:28,557 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 10:27:28,558 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 10:28:40,409 | INFO | main | Loading dataset...
+2026-05-27 10:28:40,409 | INFO | main | Starting preprocessing...
+2026-05-27 10:28:40,409 | INFO | main | Loading processed dataset from cache...
+2026-05-27 10:28:40,587 | INFO | main | Training PD model...
+2026-05-27 10:28:40,587 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 10:28:40,994 | INFO | risk_model | Training XGBoost model
+2026-05-27 10:28:48,709 | INFO | risk_model | Training completed
+2026-05-27 10:28:48,709 | INFO | risk_model | Evaluating model
+2026-05-27 10:28:49,491 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:28:49,492 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:28:50,994 | INFO | main | Running ECL engine...
+2026-05-27 10:28:50,994 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 10:29:17,144 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 10:29:17,145 | INFO | main | Running validation engine...
+2026-05-27 10:29:17,145 | INFO | validation | Starting validation engine
+2026-05-27 10:29:17,145 | INFO | validation | Generating portfolio summary
+2026-05-27 10:29:17,154 | INFO | validation | Running drift analysis
+2026-05-27 10:29:18,034 | INFO | validation | Running bias analysis
+2026-05-27 10:29:18,034 | INFO | validation | Generating risk distribution
+2026-05-27 10:29:18,038 | INFO | validation | Analyzing top risk segments
+2026-05-27 10:29:18,038 | INFO | validation | Validation completed
+2026-05-27 10:29:18,038 | INFO | main | Initializing RAG pipeline...
+2026-05-27 10:29:22,982 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 10:29:22,982 | INFO | rag_pipeline | Loading vector database
+2026-05-27 10:29:23,036 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 10:29:23,036 | INFO | main | Initializing agents...
+2026-05-27 10:29:48,378 | INFO | workflow | Building LangGraph workflow
+2026-05-27 10:29:48,385 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:29:48,385 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 10:29:48,385 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 10:29:48,386 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 10:29:48,460 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 10:30:54,240 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 10:30:54,242 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 10:31:53,923 | INFO | main | Loading dataset...
+2026-05-27 10:31:53,924 | INFO | main | Starting preprocessing...
+2026-05-27 10:31:53,924 | INFO | main | Loading processed dataset from cache...
+2026-05-27 10:31:54,080 | INFO | main | Training PD model...
+2026-05-27 10:31:54,081 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 10:31:54,497 | INFO | risk_model | Training XGBoost model
+2026-05-27 10:32:02,102 | INFO | risk_model | Training completed
+2026-05-27 10:32:02,102 | INFO | risk_model | Evaluating model
+2026-05-27 10:32:02,881 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:32:02,881 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:32:04,415 | INFO | main | Running ECL engine...
+2026-05-27 10:32:04,415 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 10:32:29,881 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 10:32:29,882 | INFO | main | Running validation engine...
+2026-05-27 10:32:29,882 | INFO | validation | Starting validation engine
+2026-05-27 10:32:29,882 | INFO | validation | Generating portfolio summary
+2026-05-27 10:32:29,890 | INFO | validation | Running drift analysis
+2026-05-27 10:32:30,781 | INFO | validation | Running bias analysis
+2026-05-27 10:32:30,781 | INFO | validation | Generating risk distribution
+2026-05-27 10:32:30,785 | INFO | validation | Analyzing top risk segments
+2026-05-27 10:32:30,785 | INFO | validation | Validation completed
+2026-05-27 10:32:30,785 | INFO | main | Initializing RAG pipeline...
+2026-05-27 10:32:35,902 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 10:32:35,902 | INFO | rag_pipeline | Loading vector database
+2026-05-27 10:32:35,952 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 10:32:35,952 | INFO | main | Initializing agents...
+2026-05-27 10:33:01,621 | INFO | workflow | Building LangGraph workflow
+2026-05-27 10:33:01,626 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:33:01,627 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 10:33:01,627 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 10:33:01,627 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 10:33:01,643 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'Credit Risk Db'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 10:33:01,644 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'Credit Risk Db'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 10:33:01,644 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'Credit Risk Db'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 10:33:01,645 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'Credit Risk Db'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 10:33:01,645 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 10:34:11,784 | INFO | main | Loading dataset...
+2026-05-27 10:34:11,785 | INFO | main | Starting preprocessing...
+2026-05-27 10:34:11,785 | INFO | main | Loading processed dataset from cache...
+2026-05-27 10:34:11,887 | INFO | main | Training PD model...
+2026-05-27 10:34:11,887 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 10:34:12,266 | INFO | risk_model | Training XGBoost model
+2026-05-27 10:34:20,179 | INFO | risk_model | Training completed
+2026-05-27 10:34:20,179 | INFO | risk_model | Evaluating model
+2026-05-27 10:34:21,008 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:34:21,008 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 10:34:22,648 | INFO | main | Running ECL engine...
+2026-05-27 10:34:22,648 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 10:34:48,860 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 10:34:48,861 | INFO | main | Running validation engine...
+2026-05-27 10:34:48,861 | INFO | validation | Starting validation engine
+2026-05-27 10:34:48,861 | INFO | validation | Generating portfolio summary
+2026-05-27 10:34:48,869 | INFO | validation | Running drift analysis
+2026-05-27 10:34:49,757 | INFO | validation | Running bias analysis
+2026-05-27 10:34:49,757 | INFO | validation | Generating risk distribution
+2026-05-27 10:34:49,761 | INFO | validation | Analyzing top risk segments
+2026-05-27 10:34:49,761 | INFO | validation | Validation completed
+2026-05-27 10:34:49,761 | INFO | main | Initializing RAG pipeline...
+2026-05-27 10:34:55,566 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 10:34:55,567 | INFO | rag_pipeline | Loading vector database
+2026-05-27 10:34:55,615 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 10:34:55,615 | INFO | main | Initializing agents...
+2026-05-27 10:35:21,069 | INFO | workflow | Building LangGraph workflow
+2026-05-27 10:35:21,081 | INFO | main | Building Knowledge Graph...
+2026-05-27 10:35:21,081 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 10:35:21,081 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 10:35:21,081 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 10:35:21,119 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 10:36:25,575 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 10:36:25,577 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 11:27:18,902 | INFO | main | Loading dataset...
+2026-05-27 11:27:18,902 | INFO | main | Starting preprocessing...
+2026-05-27 11:27:18,902 | INFO | main | Loading processed dataset from cache...
+2026-05-27 11:27:19,075 | INFO | main | Training PD model...
+2026-05-27 11:27:19,075 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 11:27:19,508 | INFO | risk_model | Training XGBoost model
+2026-05-27 11:27:27,395 | INFO | risk_model | Training completed
+2026-05-27 11:27:27,395 | INFO | risk_model | Evaluating model
+2026-05-27 11:27:28,155 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 11:27:28,155 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 11:27:29,646 | INFO | main | Running ECL engine...
+2026-05-27 11:27:29,646 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 11:27:54,897 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 11:27:54,897 | INFO | main | Running validation engine...
+2026-05-27 11:27:54,897 | INFO | validation | Starting validation engine
+2026-05-27 11:27:54,897 | INFO | validation | Generating portfolio summary
+2026-05-27 11:27:54,907 | INFO | validation | Running drift analysis
+2026-05-27 11:27:55,792 | INFO | validation | Running bias analysis
+2026-05-27 11:27:55,792 | INFO | validation | Generating risk distribution
+2026-05-27 11:27:55,796 | INFO | validation | Analyzing top risk segments
+2026-05-27 11:27:55,796 | INFO | validation | Validation completed
+2026-05-27 11:27:55,796 | INFO | main | Initializing RAG pipeline...
+2026-05-27 11:27:59,871 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 11:27:59,872 | INFO | rag_pipeline | Loading vector database
+2026-05-27 11:27:59,919 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 11:27:59,919 | INFO | main | Initializing agents...
+2026-05-27 11:28:18,752 | INFO | workflow | Building LangGraph workflow
+2026-05-27 11:28:18,760 | INFO | main | Building Knowledge Graph...
+2026-05-27 11:28:18,761 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 11:28:18,761 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 11:28:18,761 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 11:28:18,832 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'neo4j'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 11:28:18,834 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'neo4j'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 11:28:18,835 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'neo4j'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 11:28:18,835 | ERROR | Neo4jManager | Query execution failed: {neo4j_code: Neo.ClientError.Database.DatabaseNotFound} {message: Database does not exist. Database name: 'neo4j'.} {gql_status: 22000} {gql_status_description: error: data exception}
+2026-05-27 11:28:18,835 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 11:29:22,740 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 11:29:22,745 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 11:31:53,940 | INFO | main | Loading dataset...
+2026-05-27 11:31:53,940 | INFO | main | Starting preprocessing...
+2026-05-27 11:31:53,941 | INFO | main | Loading processed dataset from cache...
+2026-05-27 11:31:54,092 | INFO | main | Training PD model...
+2026-05-27 11:31:54,092 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 11:31:54,494 | INFO | risk_model | Training XGBoost model
+2026-05-27 11:32:02,568 | INFO | risk_model | Training completed
+2026-05-27 11:32:02,568 | INFO | risk_model | Evaluating model
+2026-05-27 11:32:03,332 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 11:32:03,332 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 11:32:04,871 | INFO | main | Running ECL engine...
+2026-05-27 11:32:04,871 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 11:32:30,387 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 11:32:30,388 | INFO | main | Running validation engine...
+2026-05-27 11:32:30,388 | INFO | validation | Starting validation engine
+2026-05-27 11:32:30,388 | INFO | validation | Generating portfolio summary
+2026-05-27 11:32:30,398 | INFO | validation | Running drift analysis
+2026-05-27 11:32:31,288 | INFO | validation | Running bias analysis
+2026-05-27 11:32:31,288 | INFO | validation | Generating risk distribution
+2026-05-27 11:32:31,292 | INFO | validation | Analyzing top risk segments
+2026-05-27 11:32:31,292 | INFO | validation | Validation completed
+2026-05-27 11:32:31,292 | INFO | main | Initializing RAG pipeline...
+2026-05-27 11:32:35,051 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 11:32:35,051 | INFO | rag_pipeline | Loading vector database
+2026-05-27 11:32:35,102 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 11:32:35,102 | INFO | main | Initializing agents...
+2026-05-27 11:32:54,809 | INFO | workflow | Building LangGraph workflow
+2026-05-27 11:32:54,815 | INFO | main | Building Knowledge Graph...
+2026-05-27 11:32:54,816 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 11:32:54,816 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 11:32:54,816 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 11:32:55,085 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 11:34:03,234 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 11:34:03,235 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 12:08:38,615 | INFO | main | Loading dataset...
+2026-05-27 12:08:38,616 | INFO | main | Starting preprocessing...
+2026-05-27 12:08:38,616 | INFO | main | Loading processed dataset from cache...
+2026-05-27 12:08:38,793 | INFO | main | Training PD model...
+2026-05-27 12:08:38,794 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 12:08:39,199 | INFO | risk_model | Training XGBoost model
+2026-05-27 12:08:46,622 | INFO | risk_model | Training completed
+2026-05-27 12:08:46,622 | INFO | risk_model | Evaluating model
+2026-05-27 12:08:47,371 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:08:47,371 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:08:48,846 | INFO | main | Running ECL engine...
+2026-05-27 12:08:48,847 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 12:09:14,533 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 12:09:14,534 | INFO | main | Running validation engine...
+2026-05-27 12:09:14,534 | INFO | validation | Starting validation engine
+2026-05-27 12:09:14,534 | INFO | validation | Generating portfolio summary
+2026-05-27 12:09:14,543 | INFO | validation | Running drift analysis
+2026-05-27 12:09:15,434 | INFO | validation | Running bias analysis
+2026-05-27 12:09:15,434 | INFO | validation | Generating risk distribution
+2026-05-27 12:09:15,438 | INFO | validation | Analyzing top risk segments
+2026-05-27 12:09:15,438 | INFO | validation | Validation completed
+2026-05-27 12:09:15,438 | INFO | main | Initializing RAG pipeline...
+2026-05-27 12:09:34,800 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 12:09:34,801 | INFO | rag_pipeline | Loading vector database
+2026-05-27 12:09:34,864 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 12:09:34,864 | INFO | main | Initializing agents...
+2026-05-27 12:09:53,260 | INFO | workflow | Building LangGraph workflow
+2026-05-27 12:09:53,271 | INFO | main | Building Knowledge Graph...
+2026-05-27 12:09:53,272 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 12:09:53,272 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 12:09:53,272 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 12:09:53,351 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 12:11:02,016 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 12:11:02,017 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 12:12:56,451 | INFO | main | Loading dataset...
+2026-05-27 12:12:56,452 | INFO | main | Starting preprocessing...
+2026-05-27 12:12:56,452 | INFO | main | Loading processed dataset from cache...
+2026-05-27 12:12:56,646 | INFO | main | Training PD model...
+2026-05-27 12:12:56,646 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 12:12:57,077 | INFO | risk_model | Training XGBoost model
+2026-05-27 12:13:04,838 | INFO | risk_model | Training completed
+2026-05-27 12:13:04,838 | INFO | risk_model | Evaluating model
+2026-05-27 12:13:05,595 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:13:05,595 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:13:07,070 | INFO | main | Running ECL engine...
+2026-05-27 12:13:07,070 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 12:13:33,479 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 12:13:33,481 | INFO | main | Running validation engine...
+2026-05-27 12:13:33,481 | INFO | validation | Starting validation engine
+2026-05-27 12:13:33,481 | INFO | validation | Generating portfolio summary
+2026-05-27 12:13:33,490 | INFO | validation | Running drift analysis
+2026-05-27 12:13:34,376 | INFO | validation | Running bias analysis
+2026-05-27 12:13:34,376 | INFO | validation | Generating risk distribution
+2026-05-27 12:13:34,380 | INFO | validation | Analyzing top risk segments
+2026-05-27 12:13:34,380 | INFO | validation | Validation completed
+2026-05-27 12:13:34,380 | INFO | main | Initializing RAG pipeline...
+2026-05-27 12:13:38,329 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 12:13:38,330 | INFO | rag_pipeline | Loading vector database
+2026-05-27 12:13:38,408 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 12:13:38,408 | INFO | main | Initializing agents...
+2026-05-27 12:13:56,718 | INFO | workflow | Building LangGraph workflow
+2026-05-27 12:13:56,731 | INFO | main | Building Knowledge Graph...
+2026-05-27 12:13:56,737 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 12:13:56,737 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 12:13:56,737 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 12:13:56,779 | ERROR | CreditRiskGraphBuilder | Graph build failed: 'CreditRiskGraphBuilder' object has no attribute 'create_borrowers'
+2026-05-27 12:27:16,931 | INFO | main | Loading dataset...
+2026-05-27 12:27:16,934 | INFO | main | Starting preprocessing...
+2026-05-27 12:27:16,934 | INFO | main | Loading processed dataset from cache...
+2026-05-27 12:27:17,176 | INFO | main | Training PD model...
+2026-05-27 12:27:17,176 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 12:27:17,585 | INFO | risk_model | Training XGBoost model
+2026-05-27 12:27:25,246 | INFO | risk_model | Training completed
+2026-05-27 12:27:25,246 | INFO | risk_model | Evaluating model
+2026-05-27 12:27:26,002 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:27:26,002 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:27:27,493 | INFO | main | Running ECL engine...
+2026-05-27 12:27:27,494 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 12:27:53,161 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 12:27:53,162 | INFO | main | Running validation engine...
+2026-05-27 12:27:53,162 | INFO | validation | Starting validation engine
+2026-05-27 12:27:53,162 | INFO | validation | Generating portfolio summary
+2026-05-27 12:27:53,172 | INFO | validation | Running drift analysis
+2026-05-27 12:27:54,057 | INFO | validation | Running bias analysis
+2026-05-27 12:27:54,057 | INFO | validation | Generating risk distribution
+2026-05-27 12:27:54,061 | INFO | validation | Analyzing top risk segments
+2026-05-27 12:27:54,061 | INFO | validation | Validation completed
+2026-05-27 12:27:54,061 | INFO | main | Initializing RAG pipeline...
+2026-05-27 12:28:05,084 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 12:28:05,084 | INFO | rag_pipeline | Loading vector database
+2026-05-27 12:28:05,164 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 12:28:05,164 | INFO | main | Initializing agents...
+2026-05-27 12:28:23,883 | INFO | workflow | Building LangGraph workflow
+2026-05-27 12:28:23,892 | INFO | main | Building Knowledge Graph...
+2026-05-27 12:28:23,892 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 12:28:23,892 | INFO | CreditRiskGraphBuilder | Building Neo4j knowledge graph
+2026-05-27 12:28:23,892 | INFO | Neo4jManager | Creating database constraints...
+2026-05-27 12:28:23,942 | ERROR | CreditRiskGraphBuilder | Graph build failed: 'CreditRiskGraphBuilder' object has no attribute 'create_borrowers'
+2026-05-27 12:30:23,109 | INFO | main | Loading dataset...
+2026-05-27 12:30:23,109 | INFO | main | Starting preprocessing...
+2026-05-27 12:30:23,109 | INFO | main | Loading processed dataset from cache...
+2026-05-27 12:30:23,321 | INFO | main | Training PD model...
+2026-05-27 12:30:23,322 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 12:30:23,768 | INFO | risk_model | Training XGBoost model
+2026-05-27 12:30:31,262 | INFO | risk_model | Training completed
+2026-05-27 12:30:31,262 | INFO | risk_model | Evaluating model
+2026-05-27 12:30:32,024 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:30:32,024 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:30:33,550 | INFO | main | Running ECL engine...
+2026-05-27 12:30:33,550 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 12:30:59,213 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 12:30:59,213 | INFO | main | Running validation engine...
+2026-05-27 12:30:59,213 | INFO | validation | Starting validation engine
+2026-05-27 12:30:59,213 | INFO | validation | Generating portfolio summary
+2026-05-27 12:30:59,227 | INFO | validation | Running drift analysis
+2026-05-27 12:31:00,161 | INFO | validation | Running bias analysis
+2026-05-27 12:31:00,161 | INFO | validation | Generating risk distribution
+2026-05-27 12:31:00,165 | INFO | validation | Analyzing top risk segments
+2026-05-27 12:31:00,165 | INFO | validation | Validation completed
+2026-05-27 12:31:00,165 | INFO | main | Initializing RAG pipeline...
+2026-05-27 12:31:06,624 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 12:31:06,624 | INFO | rag_pipeline | Loading vector database
+2026-05-27 12:31:06,763 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 12:31:06,763 | INFO | main | Initializing agents...
+2026-05-27 12:31:25,818 | INFO | workflow | Building LangGraph workflow
+2026-05-27 12:31:25,825 | INFO | main | Building Knowledge Graph...
+2026-05-27 12:31:25,825 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 12:31:25,825 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 12:31:25,826 | INFO | CreditRiskGraphBuilder | Creating database constraints...
+2026-05-27 12:31:26,027 | INFO | CreditRiskGraphBuilder | Creating borrower nodes...
+2026-05-27 12:32:22,004 | ERROR | Neo4jManager | Query execution failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 12:32:22,006 | ERROR | CreditRiskGraphBuilder | Graph build failed: Failed to read from defunct connection IPv4Address(('localhost', 7687)) (ResolvedIPv4Address(('127.0.0.1', 7687)))
+2026-05-27 12:56:39,578 | INFO | main | Loading dataset...
+2026-05-27 12:56:39,578 | INFO | main | Starting preprocessing...
+2026-05-27 12:56:39,578 | INFO | main | Loading processed dataset from cache...
+2026-05-27 12:56:39,812 | INFO | main | Training PD model...
+2026-05-27 12:56:39,812 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 12:56:40,216 | INFO | risk_model | Training XGBoost model
+2026-05-27 12:56:47,769 | INFO | risk_model | Training completed
+2026-05-27 12:56:47,769 | INFO | risk_model | Evaluating model
+2026-05-27 12:56:48,528 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:56:48,529 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:56:50,012 | INFO | main | Running ECL engine...
+2026-05-27 12:56:50,012 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 12:57:15,420 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 12:57:15,422 | INFO | main | Running validation engine...
+2026-05-27 12:57:15,422 | INFO | validation | Starting validation engine
+2026-05-27 12:57:15,422 | INFO | validation | Generating portfolio summary
+2026-05-27 12:57:15,431 | INFO | validation | Running drift analysis
+2026-05-27 12:57:16,321 | INFO | validation | Running bias analysis
+2026-05-27 12:57:16,321 | INFO | validation | Generating risk distribution
+2026-05-27 12:57:16,325 | INFO | validation | Analyzing top risk segments
+2026-05-27 12:57:16,325 | INFO | validation | Validation completed
+2026-05-27 12:57:16,325 | INFO | main | Initializing RAG pipeline...
+2026-05-27 12:57:27,123 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 12:57:27,123 | INFO | rag_pipeline | Loading vector database
+2026-05-27 12:57:27,182 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 12:57:27,182 | INFO | main | Initializing agents...
+2026-05-27 12:57:45,884 | INFO | workflow | Building LangGraph workflow
+2026-05-27 12:57:45,891 | INFO | main | Building Knowledge Graph...
+2026-05-27 12:57:45,891 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 12:57:45,891 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 12:57:45,891 | INFO | CreditRiskGraphBuilder | Creating database constraints...
+2026-05-27 12:57:45,973 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 12:57:45,973 | ERROR | CreditRiskGraphBuilder | Graph build failed: 'predicted_pd'
+2026-05-27 12:58:28,364 | INFO | main | Loading dataset...
+2026-05-27 12:58:28,365 | INFO | main | Starting preprocessing...
+2026-05-27 12:58:28,365 | INFO | main | Loading processed dataset from cache...
+2026-05-27 12:58:28,605 | INFO | main | Training PD model...
+2026-05-27 12:58:28,605 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 12:58:29,046 | INFO | risk_model | Training XGBoost model
+2026-05-27 12:58:37,065 | INFO | risk_model | Training completed
+2026-05-27 12:58:37,065 | INFO | risk_model | Evaluating model
+2026-05-27 12:58:37,887 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:58:37,888 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 12:58:39,400 | INFO | main | Running ECL engine...
+2026-05-27 12:58:39,400 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 12:59:05,088 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 12:59:05,088 | INFO | main | Running validation engine...
+2026-05-27 12:59:05,089 | INFO | validation | Starting validation engine
+2026-05-27 12:59:05,089 | INFO | validation | Generating portfolio summary
+2026-05-27 12:59:05,098 | INFO | validation | Running drift analysis
+2026-05-27 12:59:05,983 | INFO | validation | Running bias analysis
+2026-05-27 12:59:05,983 | INFO | validation | Generating risk distribution
+2026-05-27 12:59:05,987 | INFO | validation | Analyzing top risk segments
+2026-05-27 12:59:05,987 | INFO | validation | Validation completed
+2026-05-27 12:59:05,987 | INFO | main | Initializing RAG pipeline...
+2026-05-27 12:59:09,912 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 12:59:09,913 | INFO | rag_pipeline | Loading vector database
+2026-05-27 12:59:09,961 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 12:59:09,961 | INFO | main | Initializing agents...
+2026-05-27 12:59:28,685 | INFO | workflow | Building LangGraph workflow
+2026-05-27 12:59:28,693 | INFO | main | Building Knowledge Graph...
+2026-05-27 12:59:28,694 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 12:59:28,694 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 12:59:28,694 | INFO | CreditRiskGraphBuilder | Creating database constraints...
+2026-05-27 12:59:28,729 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 12:59:28,730 | ERROR | CreditRiskGraphBuilder | Graph build failed: 'predicted_pd'
+2026-05-27 13:05:23,114 | INFO | main | Loading dataset...
+2026-05-27 13:05:23,114 | INFO | main | Starting preprocessing...
+2026-05-27 13:05:23,114 | INFO | main | Loading processed dataset from cache...
+2026-05-27 13:05:23,318 | INFO | main | Training PD model...
+2026-05-27 13:05:23,318 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 13:05:23,727 | INFO | risk_model | Training XGBoost model
+2026-05-27 13:05:31,260 | INFO | risk_model | Training completed
+2026-05-27 13:05:31,260 | INFO | risk_model | Evaluating model
+2026-05-27 13:05:32,015 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:05:32,015 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:05:33,515 | INFO | main | Running ECL engine...
+2026-05-27 13:05:33,515 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 13:05:58,983 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 13:05:58,983 | INFO | main | Running validation engine...
+2026-05-27 13:05:58,984 | INFO | validation | Starting validation engine
+2026-05-27 13:05:58,984 | INFO | validation | Generating portfolio summary
+2026-05-27 13:05:58,992 | INFO | validation | Running drift analysis
+2026-05-27 13:05:59,880 | INFO | validation | Running bias analysis
+2026-05-27 13:05:59,880 | INFO | validation | Generating risk distribution
+2026-05-27 13:05:59,884 | INFO | validation | Analyzing top risk segments
+2026-05-27 13:05:59,884 | INFO | validation | Validation completed
+2026-05-27 13:05:59,884 | INFO | main | Initializing RAG pipeline...
+2026-05-27 13:06:03,793 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 13:06:03,794 | INFO | rag_pipeline | Loading vector database
+2026-05-27 13:06:03,848 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 13:06:03,848 | INFO | main | Initializing agents...
+2026-05-27 13:06:22,324 | INFO | workflow | Building LangGraph workflow
+2026-05-27 13:06:22,335 | INFO | main | Building Knowledge Graph...
+2026-05-27 13:06:22,336 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:06:22,336 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 13:06:22,336 | INFO | CreditRiskGraphBuilder | Creating database constraints...
+2026-05-27 13:06:22,367 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 13:06:22,367 | ERROR | CreditRiskGraphBuilder | Graph build failed: Critical Error: Column 'predicted_pd' not found in DataFrame. Available: ['loan_amnt', 'term', 'int_rate', 'installment', 'annual_inc', 'dti', 'fico_range_low', 'fico_range_high', 'open_acc', 'pub_rec', 'revol_bal', 'revol_util', 'mort_acc', 'pub_rec_bankruptcies', 'loan_income_ratio', 'installment_income_ratio', 'revol_balance_ratio', 'credit_line_ratio', 'high_utilization_flag', 'high_dti_flag', 'default_flag', 'pd_score', 'stage', 'lgd', 'ead', 'ecl']
+2026-05-27 13:10:27,030 | INFO | main | Loading dataset...
+2026-05-27 13:10:27,030 | INFO | main | Starting preprocessing...
+2026-05-27 13:10:27,030 | INFO | main | Loading processed dataset from cache...
+2026-05-27 13:10:27,237 | INFO | main | Training PD model...
+2026-05-27 13:10:27,237 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 13:10:27,665 | INFO | risk_model | Training XGBoost model
+2026-05-27 13:10:35,270 | INFO | risk_model | Training completed
+2026-05-27 13:10:35,270 | INFO | risk_model | Evaluating model
+2026-05-27 13:10:36,029 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:10:36,030 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:10:37,516 | INFO | main | Running ECL engine...
+2026-05-27 13:10:37,516 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 13:11:03,443 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 13:11:03,444 | INFO | main | Running validation engine...
+2026-05-27 13:11:03,444 | INFO | validation | Starting validation engine
+2026-05-27 13:11:03,444 | INFO | validation | Generating portfolio summary
+2026-05-27 13:11:03,452 | INFO | validation | Running drift analysis
+2026-05-27 13:11:04,335 | INFO | validation | Running bias analysis
+2026-05-27 13:11:04,335 | INFO | validation | Generating risk distribution
+2026-05-27 13:11:04,339 | INFO | validation | Analyzing top risk segments
+2026-05-27 13:11:04,339 | INFO | validation | Validation completed
+2026-05-27 13:11:04,339 | INFO | main | Initializing RAG pipeline...
+2026-05-27 13:11:08,042 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 13:11:08,042 | INFO | rag_pipeline | Loading vector database
+2026-05-27 13:11:08,089 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 13:11:08,089 | INFO | main | Initializing agents...
+2026-05-27 13:11:26,424 | INFO | workflow | Building LangGraph workflow
+2026-05-27 13:11:26,434 | INFO | main | Building Knowledge Graph...
+2026-05-27 13:11:26,435 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:11:26,435 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 13:11:26,435 | INFO | CreditRiskGraphBuilder | Creating database constraints...
+2026-05-27 13:11:26,475 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 13:11:26,475 | ERROR | CreditRiskGraphBuilder | Graph build failed: Critical Error: Could not find PD probability column. Available columns: ['loan_amnt', 'term', 'int_rate', 'installment', 'annual_inc', 'dti', 'fico_range_low', 'fico_range_high', 'open_acc', 'pub_rec', 'revol_bal', 'revol_util', 'mort_acc', 'pub_rec_bankruptcies', 'loan_income_ratio', 'installment_income_ratio', 'revol_balance_ratio', 'credit_line_ratio', 'high_utilization_flag', 'high_dti_flag', 'default_flag', 'pd_score', 'stage', 'lgd', 'ead', 'ecl']. Expected one of: ['predicted_pd', 'pd_probability', 'predicted_probability', 'prob_pd']
+Traceback (most recent call last):
+  File "/Users/kameshbhaipravinbhaisuryavanshi/Desktop/Project/Agentic AI Framework for Continuous Credit Risk Model Validation/graph/graph_builder.py", line 905, in build_graph
+    graph_df = self.prepare_graph_dataset(df)
+               ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "/Users/kameshbhaipravinbhaisuryavanshi/Desktop/Project/Agentic AI Framework for Continuous Credit Risk Model Validation/graph/graph_builder.py", line 600, in prepare_graph_dataset
+    raise ValueError(
+ValueError: Critical Error: Could not find PD probability column. Available columns: ['loan_amnt', 'term', 'int_rate', 'installment', 'annual_inc', 'dti', 'fico_range_low', 'fico_range_high', 'open_acc', 'pub_rec', 'revol_bal', 'revol_util', 'mort_acc', 'pub_rec_bankruptcies', 'loan_income_ratio', 'installment_income_ratio', 'revol_balance_ratio', 'credit_line_ratio', 'high_utilization_flag', 'high_dti_flag', 'default_flag', 'pd_score', 'stage', 'lgd', 'ead', 'ecl']. Expected one of: ['predicted_pd', 'pd_probability', 'predicted_probability', 'prob_pd']
+2026-05-27 13:15:59,902 | INFO | main | Loading dataset...
+2026-05-27 13:15:59,903 | INFO | main | Starting preprocessing...
+2026-05-27 13:15:59,903 | INFO | main | Loading processed dataset from cache...
+2026-05-27 13:16:00,081 | INFO | main | Training PD model...
+2026-05-27 13:16:00,081 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 13:16:00,491 | INFO | risk_model | Training XGBoost model
+2026-05-27 13:16:08,033 | INFO | risk_model | Training completed
+2026-05-27 13:16:08,034 | INFO | risk_model | Evaluating model
+2026-05-27 13:16:09,008 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:16:09,009 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:16:10,597 | INFO | main | Running ECL engine...
+2026-05-27 13:16:10,597 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 13:16:37,584 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 13:16:37,585 | INFO | main | Running validation engine...
+2026-05-27 13:16:37,585 | INFO | validation | Starting validation engine
+2026-05-27 13:16:37,585 | INFO | validation | Generating portfolio summary
+2026-05-27 13:16:37,594 | INFO | validation | Running drift analysis
+2026-05-27 13:16:38,480 | INFO | validation | Running bias analysis
+2026-05-27 13:16:38,481 | INFO | validation | Generating risk distribution
+2026-05-27 13:16:38,484 | INFO | validation | Analyzing top risk segments
+2026-05-27 13:16:38,484 | INFO | validation | Validation completed
+2026-05-27 13:16:38,484 | INFO | main | Initializing RAG pipeline...
+2026-05-27 13:16:42,212 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 13:16:42,212 | INFO | rag_pipeline | Loading vector database
+2026-05-27 13:16:42,264 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 13:16:42,264 | INFO | main | Initializing agents...
+2026-05-27 13:17:00,796 | INFO | workflow | Building LangGraph workflow
+2026-05-27 13:17:00,804 | INFO | main | Building Knowledge Graph...
+2026-05-27 13:17:00,804 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:17:00,804 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 13:17:00,805 | INFO | CreditRiskGraphBuilder | Creating database constraints
+2026-05-27 13:17:00,827 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 13:17:00,827 | INFO | CreditRiskGraphBuilder | Using PD column: pd_score
+2026-05-27 13:17:01,034 | INFO | CreditRiskGraphBuilder | Reducing graph rows from 448177 to 100000
+2026-05-27 13:17:01,356 | INFO | CreditRiskGraphBuilder | Final graph dataset size: 100000
+2026-05-27 13:17:01,358 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 13:17:04,980 | INFO | CreditRiskGraphBuilder | Creating loan nodes
+2026-05-27 13:17:09,310 | WARNING | CreditRiskGraphBuilder | No grade column found
+2026-05-27 13:17:09,339 | INFO | CreditRiskGraphBuilder | Creating relationships
+2026-05-27 13:17:15,739 | INFO | CreditRiskGraphBuilder | Knowledge graph built successfully
+2026-05-27 13:17:15,745 | INFO | main | Running Graph AI Agents...
+2026-05-27 13:17:15,746 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:17:15,747 | INFO | graph_rag | Initializing GraphRAG pipeline
+2026-05-27 13:22:09,021 | INFO | main | Loading dataset...
+2026-05-27 13:22:09,021 | INFO | main | Starting preprocessing...
+2026-05-27 13:22:09,021 | INFO | main | Loading processed dataset from cache...
+2026-05-27 13:22:09,206 | INFO | main | Training PD model...
+2026-05-27 13:22:09,206 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 13:22:09,618 | INFO | risk_model | Training XGBoost model
+2026-05-27 13:22:17,311 | INFO | risk_model | Training completed
+2026-05-27 13:22:17,311 | INFO | risk_model | Evaluating model
+2026-05-27 13:22:18,087 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:22:18,087 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:22:19,568 | INFO | main | Running ECL engine...
+2026-05-27 13:22:19,569 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 13:22:45,142 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 13:22:45,144 | INFO | main | Running validation engine...
+2026-05-27 13:22:45,144 | INFO | validation | Starting validation engine
+2026-05-27 13:22:45,144 | INFO | validation | Generating portfolio summary
+2026-05-27 13:22:45,154 | INFO | validation | Running drift analysis
+2026-05-27 13:22:46,041 | INFO | validation | Running bias analysis
+2026-05-27 13:22:46,041 | INFO | validation | Generating risk distribution
+2026-05-27 13:22:46,045 | INFO | validation | Analyzing top risk segments
+2026-05-27 13:22:46,045 | INFO | validation | Validation completed
+2026-05-27 13:22:46,045 | INFO | main | Initializing RAG pipeline...
+2026-05-27 13:22:49,851 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 13:22:49,852 | INFO | rag_pipeline | Loading vector database
+2026-05-27 13:22:49,909 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 13:22:49,909 | INFO | main | Initializing agents...
+2026-05-27 13:23:10,486 | INFO | workflow | Building LangGraph workflow
+2026-05-27 13:23:10,499 | INFO | main | Building Knowledge Graph...
+2026-05-27 13:23:10,499 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:23:10,499 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 13:23:10,500 | INFO | CreditRiskGraphBuilder | Creating database constraints
+2026-05-27 13:23:10,540 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 13:23:10,540 | INFO | CreditRiskGraphBuilder | Using PD column: pd_score
+2026-05-27 13:23:10,701 | INFO | CreditRiskGraphBuilder | Reducing graph rows from 448177 to 100000
+2026-05-27 13:23:11,020 | INFO | CreditRiskGraphBuilder | Final graph dataset size: 100000
+2026-05-27 13:23:11,022 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 13:23:13,976 | INFO | CreditRiskGraphBuilder | Creating loan nodes
+2026-05-27 13:23:18,007 | WARNING | CreditRiskGraphBuilder | No grade column found
+2026-05-27 13:23:18,017 | INFO | CreditRiskGraphBuilder | Creating relationships
+2026-05-27 13:23:23,400 | INFO | CreditRiskGraphBuilder | Knowledge graph built successfully
+2026-05-27 13:23:23,405 | INFO | main | Running Graph AI Agents...
+2026-05-27 13:23:23,406 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:23:23,406 | INFO | graph_rag | Initializing GraphRAG pipeline
+2026-05-27 13:38:43,239 | INFO | main | Loading dataset...
+2026-05-27 13:38:43,240 | INFO | main | Starting preprocessing...
+2026-05-27 13:38:43,240 | INFO | main | Loading processed dataset from cache...
+2026-05-27 13:38:43,414 | INFO | main | Training PD model...
+2026-05-27 13:38:43,414 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 13:38:43,812 | INFO | risk_model | Training XGBoost model
+2026-05-27 13:38:51,288 | INFO | risk_model | Training completed
+2026-05-27 13:38:51,289 | INFO | risk_model | Evaluating model
+2026-05-27 13:38:52,048 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:38:52,048 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 13:38:53,519 | INFO | main | Running ECL engine...
+2026-05-27 13:38:53,519 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 13:39:19,106 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 13:39:19,106 | INFO | main | Running validation engine...
+2026-05-27 13:39:19,106 | INFO | validation | Starting validation engine
+2026-05-27 13:39:19,106 | INFO | validation | Generating portfolio summary
+2026-05-27 13:39:19,115 | INFO | validation | Running drift analysis
+2026-05-27 13:39:19,997 | INFO | validation | Running bias analysis
+2026-05-27 13:39:19,997 | INFO | validation | Generating risk distribution
+2026-05-27 13:39:20,001 | INFO | validation | Analyzing top risk segments
+2026-05-27 13:39:20,001 | INFO | validation | Validation completed
+2026-05-27 13:39:20,001 | INFO | main | Initializing RAG pipeline...
+2026-05-27 13:39:24,996 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 13:39:24,997 | INFO | rag_pipeline | Loading vector database
+2026-05-27 13:39:25,090 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 13:39:25,090 | INFO | main | Initializing agents...
+2026-05-27 13:39:43,848 | INFO | workflow | Building LangGraph workflow
+2026-05-27 13:39:43,874 | INFO | main | Building Knowledge Graph...
+2026-05-27 13:39:43,875 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:39:43,875 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 13:39:43,875 | INFO | CreditRiskGraphBuilder | Creating database constraints
+2026-05-27 13:39:43,898 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 13:39:43,898 | INFO | CreditRiskGraphBuilder | Using PD column: pd_score
+2026-05-27 13:39:44,074 | INFO | CreditRiskGraphBuilder | Reducing graph rows from 448177 to 100000
+2026-05-27 13:39:44,396 | INFO | CreditRiskGraphBuilder | Final graph dataset size: 100000
+2026-05-27 13:39:44,398 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 13:39:47,321 | INFO | CreditRiskGraphBuilder | Creating loan nodes
+2026-05-27 13:39:51,310 | WARNING | CreditRiskGraphBuilder | No grade column found
+2026-05-27 13:39:51,312 | INFO | CreditRiskGraphBuilder | Creating relationships
+2026-05-27 13:39:56,242 | INFO | CreditRiskGraphBuilder | Knowledge graph built successfully
+2026-05-27 13:39:56,247 | INFO | main | Running Graph AI Agents...
+2026-05-27 13:39:56,248 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 13:39:56,248 | INFO | graph_rag | Initializing GraphRAG pipeline
+2026-05-27 21:47:54,367 | INFO | main | Loading dataset...
+2026-05-27 21:47:54,367 | INFO | main | Starting preprocessing...
+2026-05-27 21:47:54,367 | INFO | main | Loading processed dataset from cache...
+2026-05-27 21:47:54,629 | INFO | main | Training PD model...
+2026-05-27 21:47:54,629 | INFO | risk_model | Preparing train/test datasets
+2026-05-27 21:47:55,028 | INFO | risk_model | Training XGBoost model
+2026-05-27 21:48:03,233 | INFO | risk_model | Training completed
+2026-05-27 21:48:03,234 | INFO | risk_model | Evaluating model
+2026-05-27 21:48:04,132 | INFO | risk_model | Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 21:48:04,133 | INFO | main | Model Metrics: {'auc': np.float64(0.7201532912465045), 'accuracy': 0.8697596546210142, 'precision': np.float64(0.4473684210526316), 'recall': np.float64(0.0002887081160946283), 'f1_score': np.float64(0.0005770438383598378)}
+2026-05-27 21:48:05,938 | INFO | main | Running ECL engine...
+2026-05-27 21:48:05,938 | INFO | ecl_engine | Running IFRS9 engine
+2026-05-27 21:48:31,668 | INFO | ecl_engine | IFRS9 calculation completed
+2026-05-27 21:48:31,669 | INFO | main | Running validation engine...
+2026-05-27 21:48:31,669 | INFO | validation | Starting validation engine
+2026-05-27 21:48:31,669 | INFO | validation | Generating portfolio summary
+2026-05-27 21:48:31,679 | INFO | validation | Running drift analysis
+2026-05-27 21:48:32,623 | INFO | validation | Running bias analysis
+2026-05-27 21:48:32,623 | INFO | validation | Generating risk distribution
+2026-05-27 21:48:32,628 | INFO | validation | Analyzing top risk segments
+2026-05-27 21:48:32,628 | INFO | validation | Validation completed
+2026-05-27 21:48:32,628 | INFO | main | Initializing RAG pipeline...
+2026-05-27 21:48:37,628 | INFO | rag_pipeline | Using existing vector DB
+2026-05-27 21:48:37,628 | INFO | rag_pipeline | Loading vector database
+2026-05-27 21:48:37,720 | INFO | rag_pipeline | Vector DB loaded successfully
+2026-05-27 21:48:37,720 | INFO | main | Initializing agents...
+2026-05-27 21:49:01,149 | INFO | workflow | Building LangGraph workflow
+2026-05-27 21:49:01,159 | INFO | main | Building Knowledge Graph...
+2026-05-27 21:49:01,160 | INFO | Neo4jManager | Connected to Neo4j at bolt://localhost:7687
+2026-05-27 21:49:01,160 | INFO | CreditRiskGraphBuilder | Building knowledge graph...
+2026-05-27 21:49:01,160 | INFO | CreditRiskGraphBuilder | Creating database constraints
+2026-05-27 21:49:01,160 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,161 | WARNING | CreditRiskGraphBuilder | Constraint warning: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,161 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,161 | WARNING | CreditRiskGraphBuilder | Constraint warning: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,161 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,161 | WARNING | CreditRiskGraphBuilder | Constraint warning: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,162 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,162 | WARNING | CreditRiskGraphBuilder | Constraint warning: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
+2026-05-27 21:49:01,162 | INFO | CreditRiskGraphBuilder | Preparing optimized graph dataset
+2026-05-27 21:49:01,162 | INFO | CreditRiskGraphBuilder | Using PD column: pd_score
+2026-05-27 21:49:01,320 | INFO | CreditRiskGraphBuilder | Reducing graph rows from 448177 to 100000
+2026-05-27 21:49:01,644 | INFO | CreditRiskGraphBuilder | Final graph dataset size: 100000
+2026-05-27 21:49:01,646 | INFO | CreditRiskGraphBuilder | Creating borrower nodes
+2026-05-27 21:49:01,694 | ERROR | Neo4jManager | Query execution failed: Couldn't connect to localhost:7687 (resolved to ('[::1]:7687', '127.0.0.1:7687')):
+Failed to establish connection to ResolvedIPv6Address(('::1', 7687, 0, 0)) (reason [Errno 61] Connection refused)
+Failed to establish connection to ResolvedIPv4Address(('127.0.0.1', 7687)) (reason [Errno 61] Connection refused)
